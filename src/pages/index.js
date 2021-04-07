@@ -126,6 +126,7 @@ const Main = () => {
             <TeamPortfolio />
             <Newsletter />
           </ContentWrapper>
+
           <Footer />
         </AppWrapper>
         {/* end of app classic landing */}
