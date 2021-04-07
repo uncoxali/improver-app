@@ -120,9 +120,9 @@ export const features = {
 /* ------------------------------------ */
 // App slider data section
 /* ------------------------------------ */
-import appSlide1 from "common/assets/image/appModern/page4.png";
-import appSlide2 from "common/assets/image/appModern/page4.png";
-import appSlide3 from "common/assets/image/appModern/page4.png";
+import appSlide1 from "common/assets/image/appModern/wingle1.png";
+import appSlide2 from "common/assets/image/appModern/wingle1.png";
+import appSlide3 from "common/assets/image/appModern/wingle1.png";
 import appIcon from "common/assets/image/appModern/icon1.svg";
 
 export const appSlider = {
@@ -455,7 +455,7 @@ export const testimonial = {
 import chat from "common/assets/image/appModern/chat.svg";
 import group from "common/assets/image/appModern/group.svg";
 import github from "common/assets/image/appModern/github.svg";
-import footerLogo from "common/assets/image/appModern/logoWhite.png";
+import footerLogo from "common/assets/image/appModern/improver-white.png";
 
 export const footer = {
   widgets: [

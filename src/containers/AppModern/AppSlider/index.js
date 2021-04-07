@@ -7,6 +7,8 @@ import FeatureBlock from "common/components/FeatureBlock";
 import GlideCarousel from "common/components/GlideCarousel";
 import GlideSlide from "common/components/GlideCarousel/glideSlide";
 import SectionWrapper, { CarouseWrapper, TextWrapper } from "./appSlider.style";
+import LogoGoogle from "common/assets/image/appModern/google.png";
+import LogoApple from "common/assets/image/appModern/apple.png";
 
 import { appSlider } from "common/data/AppModern";
 
@@ -55,6 +57,27 @@ const AppSlider = () => {
           ))}
         </TextWrapper>
       </Container>
+      <div
+        className="box-store"
+        style={{
+          position: "relative",
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <div
+          className="app-store"
+          style={{ position: "absolute", marginTop: "50px" }}
+        >
+          <img src={LogoGoogle} width="180px" />
+          <img
+            src={LogoApple}
+            width="170px"
+            height="50px"
+            style={{ marginBottom: "10px" }}
+          />
+        </div>
+      </div>
     </SectionWrapper>
   );
 };
