@@ -120,9 +120,9 @@ export const features = {
 /* ------------------------------------ */
 // App slider data section
 /* ------------------------------------ */
-import appSlide1 from "common/assets/image/appModern/wingle1.png";
-import appSlide2 from "common/assets/image/appModern/wingle1.png";
-import appSlide3 from "common/assets/image/appModern/wingle1.png";
+import appSlide1 from "common/assets/image/appModern/page4.png";
+import appSlide2 from "common/assets/image/appModern/page4.png";
+import appSlide3 from "common/assets/image/appModern/page4.png";
 import appIcon from "common/assets/image/appModern/icon1.svg";
 
 export const appSlider = {
@@ -185,10 +185,9 @@ export const designAndBuilt = {
 /* ------------------------------------ */
 // Product  Slide  section
 /* ------------------------------------ */
-import slide1 from "common/assets/image/appModern/page1.png";
-import slide2 from "common/assets/image/appModern/page2.png";
-import slide3 from "common/assets/image/appModern/page3.png";
-import slide4 from "common/assets/image/appModern/page4.png";
+import slide1 from "common/assets/image/appModern/page4.png";
+import slide2 from "common/assets/image/appModern/page4.png";
+import slide3 from "common/assets/image/appModern/page4.png";
 
 export const productData = {
   slogan: "PRODUCT SHOWCASE",
@@ -228,7 +227,7 @@ export const productData = {
     },
     {
       id: 6,
-      thumb_url: slide4,
+      thumb_url: slide2,
       link: "#1",
       title: "slide 6",
     },

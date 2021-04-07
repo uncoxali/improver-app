@@ -12,7 +12,7 @@
 #flaticonExample blockquote:after,
 #flaticonExample q:before,
 #flaticonExample q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -22,7 +22,7 @@
 }
 
 #flaticonExample {
-  font-family: "Varela Round", Helvetica, Arial, sans-serif;
+  font-family: 'Varela Round', Helvetica, Arial, sans-serif;
   font-size: 16px;
   color: #222;
 }
@@ -42,10 +42,10 @@
   padding: 0;
 }
 
-#flaticonExample [class^="flaticon-"]:before,
-#flaticonExample [class*=" flaticon-"]:before,
-#flaticonExample [class^="flaticon-"]:after,
-#flaticonExample [class*=" flaticon-"]:after {
+#flaticonExample [class^='flaticon-']:before,
+#flaticonExample [class*=' flaticon-']:before,
+#flaticonExample [class^='flaticon-']:after,
+#flaticonExample [class*=' flaticon-']:after {
   font-family: Flaticon;
   font-size: 30px;
   font-style: normal;
@@ -173,7 +173,7 @@
 #flaticonExample .glyph .glyph-icon {
   padding: 10px;
   display: block;
-  font-family: "Flaticon";
+  font-family: 'Flaticon';
   font-size: 64px;
   line-height: 1;
 }
@@ -228,7 +228,7 @@
 }
 
 #flaticonExample .glyph > input.icon-input {
-  font-family: "Flaticon";
+  font-family: 'Flaticon';
   font-size: 16px;
   margin-bottom: 10px;
 }
@@ -260,7 +260,7 @@
 }
 
 #flaticonExample .iconsuse:after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }

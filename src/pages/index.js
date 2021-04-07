@@ -121,7 +121,6 @@ const Main = () => {
             {/* <DashboardFeatures /> */}
             {/* <Testimonial /> */}
             <DesignedAndBuilt />
-            <div style={{ marginBottom: "90px" }}></div>
             <ProductSlide />
             {/* <PricingPolicy /> */}
             <TeamPortfolio />

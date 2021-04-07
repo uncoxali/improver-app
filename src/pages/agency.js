@@ -1,24 +1,24 @@
-import React, { Fragment } from "react";
-import Head from "next/head";
-import Sticky from "react-stickynode";
-import { ThemeProvider } from "styled-components";
-import { agencyTheme } from "common/theme/agency";
-import { ResetCSS } from "common/assets/css/style";
-import { GlobalStyle, AgencyWrapper } from "containers/Agency/agency.style";
-import Navbar from "containers/Agency/Navbar";
-import BannerSection from "containers/Agency/BannerSection";
-import FeatureSection from "containers/Agency/FeatureSection";
-import AboutUsSection from "containers/Agency/AboutUsSection";
-import WorkHistory from "containers/Agency/WorkHistory";
-import BlogSection from "containers/Agency/BlogSection";
-import TestimonialSection from "containers/Agency/TestimonialSection";
-import TeamSection from "containers/Agency/TeamSection";
-import VideoSection from "containers/Agency/VideoSection";
-import NewsletterSection from "containers/Agency/NewsletterSection";
-import QualitySection from "containers/Agency/QualitySection";
-import Footer from "containers/Agency/Footer";
-import { DrawerProvider } from "common/contexts/DrawerContext";
-import FaqSection from "containers/Agency/FaqSection";
+import React, { Fragment } from 'react';
+import Head from 'next/head';
+import Sticky from 'react-stickynode';
+import { ThemeProvider } from 'styled-components';
+import { agencyTheme } from 'common/theme/agency';
+import { ResetCSS } from 'common/assets/css/style';
+import { GlobalStyle, AgencyWrapper } from 'containers/Agency/agency.style';
+import Navbar from 'containers/Agency/Navbar';
+import BannerSection from 'containers/Agency/BannerSection';
+import FeatureSection from 'containers/Agency/FeatureSection';
+import AboutUsSection from 'containers/Agency/AboutUsSection';
+import WorkHistory from 'containers/Agency/WorkHistory';
+import BlogSection from 'containers/Agency/BlogSection';
+import TestimonialSection from 'containers/Agency/TestimonialSection';
+import TeamSection from 'containers/Agency/TeamSection';
+import VideoSection from 'containers/Agency/VideoSection';
+import NewsletterSection from 'containers/Agency/NewsletterSection';
+import QualitySection from 'containers/Agency/QualitySection';
+import Footer from 'containers/Agency/Footer';
+import { DrawerProvider } from 'common/contexts/DrawerContext';
+import FaqSection from 'containers/Agency/FaqSection';
 
 const Agency = () => {
   return (

@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import FooterImage from "common/assets/image/hosting/footer-bg.png";
+import styled from 'styled-components';
+import FooterImage from 'common/assets/image/hosting/footer-bg.png';
 
 const FooterWrapper = styled.footer`
   position: relative;
@@ -8,7 +8,7 @@ const FooterWrapper = styled.footer`
     padding-top: 170px;
     margin-top: -150px;
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       width: 104%;
       padding-bottom: 104%;

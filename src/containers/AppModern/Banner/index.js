@@ -72,10 +72,10 @@ const Banner = () => {
       <Container>
         <BannerContent>
           <Fade up>
-            <RatingInfo>
-              {/* <Rating rating={4} /> */}
-              {/* 4.9 of 5 By <img src={microsoft} alt="Microsoft" /> */}
-            </RatingInfo>
+            {/* <RatingInfo>
+              <Rating rating={4} />
+              4.9 of 5 By <img src={microsoft} alt="Microsoft" />
+            </RatingInfo> */}
           </Fade>
           <Fade up delay={100}>
             <Heading

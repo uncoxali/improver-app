@@ -86,9 +86,9 @@ const ProductSlide = () => {
             </CircleLoader>
           )}
         </CarouselArea>
-        <div style={{ marginBottom: "70px" }}></div>
         {/* End of carousel section */}
       </Container>
+      <div style={{ marginTop: "45px" }}></div>
     </ProductSlideWrapper>
   );
 };

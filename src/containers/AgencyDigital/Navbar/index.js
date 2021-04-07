@@ -1,23 +1,23 @@
-import React, { useState, useRef } from "react";
-import Fade from "react-reveal/Fade";
-import ScrollSpyMenu from "common/components/ScrollSpyMenu";
-import Scrollspy from "react-scrollspy";
-import AnchorLink from "react-anchor-link-smooth-scroll";
-import { Icon } from "react-icons-kit";
-import { androidMenu } from "react-icons-kit/ionicons/androidMenu";
-import { androidClose } from "react-icons-kit/ionicons/androidClose";
-import Link from "common/components/Link";
-import Button from "common/components/Button";
-import Logo from "common/components/UIElements/Logo";
-import Container from "common/components/UI/ContainerTwo";
+import React, { useState, useRef } from 'react';
+import Fade from 'react-reveal/Fade';
+import ScrollSpyMenu from 'common/components/ScrollSpyMenu';
+import Scrollspy from 'react-scrollspy';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { Icon } from 'react-icons-kit';
+import { androidMenu } from 'react-icons-kit/ionicons/androidMenu';
+import { androidClose } from 'react-icons-kit/ionicons/androidClose';
+import Link from 'common/components/Link';
+import Button from 'common/components/Button';
+import Logo from 'common/components/UIElements/Logo';
+import Container from 'common/components/UI/ContainerTwo';
 import NavbarWrapper, {
   MenuArea,
   MobileMenu,
   NavbarRight,
-} from "./navbar.style";
-import LogoImage from "common/assets/image/agencyDigital/logo.png";
+} from './navbar.style';
+import LogoImage from 'common/assets/image/agencyDigital/logo.png';
 
-import { data } from "common/data/AgencyDigital";
+import { data } from 'common/data/AgencyDigital';
 
 const Navbar = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -68,7 +68,7 @@ const Navbar = () => {
             icon={
               mobileMenu ? (
                 <Icon
-                  style={{ color: "#02073E" }}
+                  style={{ color: '#02073E' }}
                   className="bar"
                   size={32}
                   icon={androidClose}
@@ -76,7 +76,7 @@ const Navbar = () => {
               ) : (
                 <Fade>
                   <Icon
-                    style={{ color: "#02073E" }}
+                    style={{ color: '#02073E' }}
                     className="close"
                     icon={androidMenu}
                     size={32}
@@ -92,7 +92,7 @@ const Navbar = () => {
       </Container>
 
       {/* start mobile menu */}
-      <MobileMenu className={`mobile-menu ${mobileMenu ? "active" : ""}`}>
+      <MobileMenu className={`mobile-menu ${mobileMenu ? 'active' : ''}`}>
         <Container>
           <Scrollspy
             className="menu"

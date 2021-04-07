@@ -1,22 +1,22 @@
-import React, { useContext } from "react";
-import PropTypes from "prop-types";
-import { openModal, closeModal } from "@redq/reuse-modal";
-import NavbarWrapper from "common/components/Navbar";
-import Drawer from "common/components/Drawer";
-import Button from "common/components/Button";
-import Logo from "common/components/UIElements/Logo";
-import HamburgMenu from "common/components/HamburgMenu";
-import ScrollSpyMenu from "common/components/ScrollSpyMenu";
-import { Container } from "./navbar.style";
-import SearchPanel from "../SearchPanel";
-import LoginModal from "../LoginModal";
-import CopyrightSection from "../CopyrightsSection";
+import React, { useContext } from 'react';
+import PropTypes from 'prop-types';
+import { openModal, closeModal } from '@redq/reuse-modal';
+import NavbarWrapper from 'common/components/Navbar';
+import Drawer from 'common/components/Drawer';
+import Button from 'common/components/Button';
+import Logo from 'common/components/UIElements/Logo';
+import HamburgMenu from 'common/components/HamburgMenu';
+import ScrollSpyMenu from 'common/components/ScrollSpyMenu';
+import { Container } from './navbar.style';
+import SearchPanel from '../SearchPanel';
+import LoginModal from '../LoginModal';
+import CopyrightSection from '../CopyrightsSection';
 
-import LogoImage from "common/assets/image/agency/logo.png";
+import LogoImage from 'common/assets/image/agency/logo.png';
 
-import { DrawerContext } from "common/contexts/DrawerContext";
+import { DrawerContext } from 'common/contexts/DrawerContext';
 
-import data from "common/data/Agency/";
+import data from 'common/data/Agency/';
 
 // Default close button for modal
 const CloseModalButton = () => (
@@ -45,12 +45,12 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
   const handleSearchModal = () => {
     openModal({
       config: {
-        className: "search-modal",
+        className: 'search-modal',
         disableDragging: true,
-        width: "100%",
-        height: "100%",
-        animationFrom: { transform: "translateY(100px)" }, // react-spring <Spring from={}> props value
-        animationTo: { transform: "translateY(0)" }, //  react-spring <Spring to={}> props value
+        width: '100%',
+        height: '100%',
+        animationFrom: { transform: 'translateY(100px)' }, // react-spring <Spring from={}> props value
+        animationTo: { transform: 'translateY(0)' }, //  react-spring <Spring to={}> props value
         transition: {
           mass: 1,
           tension: 180,
@@ -68,12 +68,12 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
   const handleLoginModal = () => {
     openModal({
       config: {
-        className: "login-modal",
+        className: 'login-modal',
         disableDragging: true,
-        width: "100%",
-        height: "100%",
-        animationFrom: { transform: "translateY(100px)" }, // react-spring <Spring from={}> props value
-        animationTo: { transform: "translateY(0)" }, //  react-spring <Spring to={}> props value
+        width: '100%',
+        height: '100%',
+        animationFrom: { transform: 'translateY(100px)' }, // react-spring <Spring from={}> props value
+        animationTo: { transform: 'translateY(0)' }, //  react-spring <Spring to={}> props value
         transition: {
           mass: 1,
           tension: 180,
@@ -90,7 +90,7 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
   // Toggle drawer
   const toggleHandler = () => {
     dispatch({
-      type: "TOGGLE",
+      type: 'TOGGLE',
     });
   };
 
@@ -103,7 +103,7 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
           title="Agency"
           logoStyle={logoStyle}
         />
-        <div style={{ display: "flex", alignItems: "center" }}>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
           <Button
             variant="textButton"
             onClick={handleSearchModal}
@@ -145,12 +145,12 @@ Navbar.propTypes = {
 Navbar.defaultProps = {
   // Default navbar style
   navbarStyle: {
-    minHeight: "70px",
+    minHeight: '70px',
   },
   // Default logo size
   logoStyle: {
-    width: "128px",
-    height: "auto",
+    width: '128px',
+    height: 'auto',
   },
 };
 

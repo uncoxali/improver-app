@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export const ResetCSS = createGlobalStyle`
   ::selection {
@@ -53,20 +53,6 @@ export const ResetCSS = createGlobalStyle`
     padding: 0;
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
-  }
-
-  .googleplay {
-    display: flex;
-    justify-content: center;
-    margin-right: 300;
-  }
-  .parent{
-    position:absolute;
-    margin-top: 80px;
-  }
-
-  .apple-store{
-    margin-bottom: 13px;
   }
 
   ul {

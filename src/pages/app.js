@@ -1,25 +1,25 @@
-import React, { useState, useEffect } from "react";
-import Head from "next/head";
-import { ThemeProvider } from "styled-components";
-import Sticky from "react-stickynode";
-import { appTheme } from "common/theme/app";
+import React, { useState, useEffect } from 'react';
+import Head from 'next/head';
+import { ThemeProvider } from 'styled-components';
+import Sticky from 'react-stickynode';
+import { appTheme } from 'common/theme/app';
 import {
   GlobalStyle,
   AppWrapper,
   ConditionWrapper,
-} from "containers/App/app.style";
-import { ResetCSS } from "common/assets/css/style";
-import Navbar from "containers/App/Navbar";
-import DomainSection from "containers/App/Banner";
-import FeatureSection from "containers/App/FeatureSection";
-import ControllSection from "containers/App/Control";
-import TestimonialSection from "containers/App/Testimonial";
-import PartnerHistory from "containers/App/PartnerHistory";
-import PaymentSection from "containers/App/PaymentSection";
-import Footer from "containers/App/Footer";
-import FeatureSlider from "containers/App/FeatureSlider";
-import FeatureSliderTwo from "containers/App/FeatureSliderTwo";
-import { DrawerProvider } from "common/contexts/DrawerContext";
+} from 'containers/App/app.style';
+import { ResetCSS } from 'common/assets/css/style';
+import Navbar from 'containers/App/Navbar';
+import DomainSection from 'containers/App/Banner';
+import FeatureSection from 'containers/App/FeatureSection';
+import ControllSection from 'containers/App/Control';
+import TestimonialSection from 'containers/App/Testimonial';
+import PartnerHistory from 'containers/App/PartnerHistory';
+import PaymentSection from 'containers/App/PaymentSection';
+import Footer from 'containers/App/Footer';
+import FeatureSlider from 'containers/App/FeatureSlider';
+import FeatureSliderTwo from 'containers/App/FeatureSliderTwo';
+import { DrawerProvider } from 'common/contexts/DrawerContext';
 
 function getSize() {
   return {
@@ -38,10 +38,10 @@ function useWindowSize() {
   }
 
   useEffect(() => {
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
@@ -50,7 +50,6 @@ function useWindowSize() {
 
 const App = () => {
   const size = process.browser && useWindowSize();
-
   return (
     <ThemeProvider theme={appTheme}>
       <>

@@ -1,6 +1,6 @@
-import styled, { createGlobalStyle, keyframes } from "styled-components";
-import { themeGet } from "@styled-system/theme-get";
-import footerBg from "common/assets/image/charity/footer-bg.png";
+import styled, { createGlobalStyle, keyframes } from 'styled-components';
+import { themeGet } from '@styled-system/theme-get';
+import footerBg from 'common/assets/image/charity/footer-bg.png';
 
 const shake = keyframes`
 0% {
@@ -26,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    color: ${themeGet("colors.heading", "#060F1E")};
+    color: ${themeGet('colors.heading', '#060F1E')};
     font-family: 'Open Sans', sans-serif;
   }
 
@@ -40,7 +40,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   p {
-    color: ${themeGet("colors.secondaryText", "#616970")};
+    color: ${themeGet('colors.secondaryText', '#616970')};
   }
 
   /* Drawer menu style */
@@ -99,7 +99,7 @@ const GlobalStyle = createGlobalStyle`
 
           a {
             display: block;
-            color: ${themeGet("colors.heading", "#060F1E")};
+            color: ${themeGet('colors.heading', '#060F1E')};
             font-size: 18px;
             font-weight: 600;
             transition: all 0.3s ease;
@@ -107,13 +107,13 @@ const GlobalStyle = createGlobalStyle`
               font-size: 16px;
             }
             &:hover {
-              color: ${themeGet("colors.secondary", "#D50032")};
+              color: ${themeGet('colors.secondary', '#D50032')};
             }
           }
 
           &.active {
             a {
-              color: ${themeGet("colors.secondary", "#D50032")};
+              color: ${themeGet('colors.secondary', '#D50032')};
               position: relative;
               &:before {
                 content: '';
@@ -121,7 +121,7 @@ const GlobalStyle = createGlobalStyle`
                 width: 20px;
                 height: 2px;
                 border-radius: 5px;
-                background-color: ${themeGet("colors.secondary", "#D50032")};
+                background-color: ${themeGet('colors.secondary', '#D50032')};
                 position: absolute;
                 top: calc(50% - 1px);
                 left: -30px;
@@ -162,7 +162,7 @@ const CharityWrapper = styled.div`
 
     &::before {
       width: calc(100% - 650px);
-      content: "";
+      content: '';
       display: block;
       height: 100%;
       position: absolute;
@@ -185,7 +185,7 @@ const CharityWrapper = styled.div`
   .sticky-nav-active {
     .navbar {
       padding: 16px 0;
-      background-color: ${themeGet("colors.white", "#ffffff")};
+      background-color: ${themeGet('colors.white', '#ffffff')};
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 
       &::before {
@@ -193,11 +193,11 @@ const CharityWrapper = styled.div`
       }
 
       .smooth_scroll {
-        color: ${themeGet("colors.heading", "#060F1E")};
+        color: ${themeGet('colors.heading', '#060F1E')};
         transition: color 0.3s ease;
 
         &:hover {
-          color: ${themeGet("colors.text", "#294859")};
+          color: ${themeGet('colors.text', '#294859')};
         }
       }
     }
@@ -206,8 +206,8 @@ const CharityWrapper = styled.div`
   .learn__more-btn {
     display: inline-flex;
     align-items: center;
-    font-family: "Open Sans", sans-serif;
-    color: ${themeGet("colors.heading", "#060F1E")};
+    font-family: 'Open Sans', sans-serif;
+    color: ${themeGet('colors.heading', '#060F1E')};
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0;
@@ -220,7 +220,7 @@ const CharityWrapper = styled.div`
     }
 
     &::before {
-      content: "";
+      content: '';
       display: block;
       position: absolute;
       top: 0;
@@ -228,7 +228,7 @@ const CharityWrapper = styled.div`
       height: 100%;
       border-radius: 40px;
       width: 72px;
-      background-color: ${themeGet("colors.primary", "#FCF22B")};
+      background-color: ${themeGet('colors.primary', '#FCF22B')};
       transition: all 0.3s ease-out;
     }
 
@@ -240,7 +240,7 @@ const CharityWrapper = styled.div`
       width: 20px;
       height: 2px;
       margin-right: 9px;
-      background-color: ${themeGet("colors.heading", "#060F1E")};
+      background-color: ${themeGet('colors.heading', '#060F1E')};
       transform-origin: 50% 50%;
       z-index: 1;
     }
@@ -270,7 +270,7 @@ const CharityWrapper = styled.div`
       top: 0;
       right: 60px;
       z-index: 99999;
-      background-color: ${themeGet("colors.secondary", "#D50032")};
+      background-color: ${themeGet('colors.secondary', '#D50032')};
       transition: background-color 0.2s ease;
       @media only screen and (max-width: 1440px) {
         width: 75px;
@@ -305,7 +305,7 @@ const CharityWrapper = styled.div`
         li {
           width: 5px;
           height: 4px;
-          background-color: ${themeGet("colors.white", "#ffffff")};
+          background-color: ${themeGet('colors.white', '#ffffff')};
         }
       }
 
@@ -313,7 +313,7 @@ const CharityWrapper = styled.div`
         font-size: 22px;
         position: absolute;
         font-weight: 900;
-        color: ${themeGet("colors.white", "#ffffff")};
+        color: ${themeGet('colors.white', '#ffffff')};
         transform: scale(0.1);
         opacity: 0;
         visibility: hidden;

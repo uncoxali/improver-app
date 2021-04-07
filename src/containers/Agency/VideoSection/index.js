@@ -1,15 +1,15 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { openModal, closeModal } from "@redq/reuse-modal";
-import Box from "common/components/Box";
-import Text from "common/components/Text";
-import Heading from "common/components/Heading";
-import Button from "common/components/Button";
-import Image from "common/components/Image";
-import Container from "common/components/UI/Container";
-import VideoSectionWrapper from "./videoSection.style";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { openModal, closeModal } from '@redq/reuse-modal';
+import Box from 'common/components/Box';
+import Text from 'common/components/Text';
+import Heading from 'common/components/Heading';
+import Button from 'common/components/Button';
+import Image from 'common/components/Image';
+import Container from 'common/components/UI/Container';
+import VideoSectionWrapper from './videoSection.style';
 
-// import PreviewImage from 'common/assets/image/agency/preview-image.jpg';
+import PreviewImage from 'common/assets/image/agency/preview-image.jpg';
 
 const IntroVideo = () => (
   <iframe
@@ -42,11 +42,11 @@ const VideoSection = ({
   const handleVideoModal = () => {
     openModal({
       config: {
-        className: "video-modal",
+        className: 'video-modal',
         disableDragging: true,
         default: {
-          width: "100%",
-          height: "100%",
+          width: '100%',
+          height: '100%',
           x: 0,
           y: 0,
         },
@@ -65,7 +65,7 @@ const VideoSection = ({
           <Heading content="Take a look how we enjoy work" {...sectionTitle} />
         </Box>
         <Box className="figure">
-          {/* <Image src={PreviewImage} alt="Video Preview Image" /> */}
+          <Image src={PreviewImage} alt="Video Preview Image" />
           <Box className="fig__caption">
             <Button
               {...buttonStyle}
@@ -95,34 +95,34 @@ VideoSection.propTypes = {
 VideoSection.defaultProps = {
   // section header default style
   sectionHeader: {
-    mb: ["40px", "56px"],
+    mb: ['40px', '56px'],
   },
   // sub section default style
   sectionSubTitle: {
-    as: "span",
-    display: "block",
-    textAlign: "center",
-    fontSize: "14px",
-    letterSpacing: "0.15em",
-    fontWeight: "700",
-    color: "#10ac84",
-    mb: "10px",
+    as: 'span',
+    display: 'block',
+    textAlign: 'center',
+    fontSize: '14px',
+    letterSpacing: '0.15em',
+    fontWeight: '700',
+    color: '#10ac84',
+    mb: '10px',
   },
   // section title default style
   sectionTitle: {
-    textAlign: "center",
-    fontSize: ["20px", "24px"],
-    fontWeight: "400",
-    color: "#0f2137",
-    letterSpacing: "-0.025em",
-    mb: "0",
+    textAlign: 'center',
+    fontSize: ['20px', '24px'],
+    fontWeight: '400',
+    color: '#0f2137',
+    letterSpacing: '-0.025em',
+    mb: '0',
   },
   // button default design
   buttonStyle: {
-    variant: "textButton",
+    variant: 'textButton',
     p: 0,
-    color: "#ec4444",
-    fontSize: "71px",
+    color: '#ec4444',
+    fontSize: '71px',
   },
 };
 
