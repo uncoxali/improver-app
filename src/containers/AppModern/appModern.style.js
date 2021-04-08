@@ -1,5 +1,5 @@
-import styled, { createGlobalStyle } from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled, { createGlobalStyle } from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -54,7 +54,7 @@ export const AppWrapper = styled.div`
   .sticky-active {
     .navbar {
       padding: 20px 0 21px;
-      background-color: ${themeGet('colors.white', '#ffffff')};
+      background-color: ${themeGet("colors.white", "#ffffff")};
       box-shadow: 0px 3px 8px 0px rgba(43, 83, 135, 0.08);
       @media only screen and (max-width: 1366px) {
         padding: 15px 0 16px;
@@ -71,30 +71,30 @@ export const AppWrapper = styled.div`
       ul {
         li {
           a {
-            color: ${themeGet('colors.secondary', '#000')};
+            color: ${themeGet("colors.secondary", "#000")};
             font-size: 16px;
             font-weight: 400;
             transition: all 0.3s ease;
             &:hover {
-              color: ${themeGet('colors.primary', '#d1397c')};
+              color: ${themeGet("colors.primary", "#d1397c")};
             }
           }
           &.is-current {
             a {
-              color: ${themeGet('colors.primary', '#d1397c')};
+              color: ${themeGet("colors.primary", "#d1397c")};
             }
           }
         }
       }
       .reusecore__button {
         &.menubar {
-          color: ${themeGet('colors.secondary', '#000')};
+          color: ${themeGet("colors.secondary", "#000")};
         }
         &.text {
-          color: ${themeGet('colors.secondary', '#000')};
+          color: ${themeGet("colors.secondary", "#000")};
           .btn-icon {
             svg {
-              stroke: ${themeGet('colors.secondary', '#000')};
+              stroke: ${themeGet("colors.secondary", "#000")};
             }
           }
           @media only screen and (max-width: 991px) {
@@ -125,7 +125,7 @@ export const SectionHeader = styled.header`
     line-height: 24px;
     margin-bottom: 12px;
     letter-spacing: 1.5px;
-    color: ${themeGet('colors.primary', '#2563FF')};
+    color: ${themeGet("colors.primary", "#2563FF")};
     text-transform: uppercase;
     @media only screen and (max-width: 991px) {
       font-size: 13px;
@@ -136,7 +136,7 @@ export const SectionHeader = styled.header`
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
-    color: ${themeGet('colors.headingColor', '#0F2137')};
+    color: ${themeGet("colors.headingColor", "#0F2137")};
     margin: 0;
     letter-spacing: -1px;
     @media only screen and (max-width: 1366px) {

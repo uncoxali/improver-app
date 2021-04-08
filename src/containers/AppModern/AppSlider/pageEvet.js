@@ -10,10 +10,10 @@ import SectionWrapper, { CarouseWrapper, TextWrapper } from "./appSlider.style";
 import LogoGoogle from "common/assets/image/appModern/google.png";
 import LogoApple from "common/assets/image/appModern/apple.png";
 
-import { appSlider } from "common/data/AppModern";
+import { appEvet } from "common/data/AppModern/evet";
 
 const AppSlider = () => {
-  const { title, description, features, carousel } = appSlider;
+  const { title, description, features, carousel } = appEvet;
 
   const glideOptions = {
     type: "carousel",
@@ -30,9 +30,9 @@ const AppSlider = () => {
           <GlideCarousel
             bullets={true}
             controls={false}
-            numberOfBullets={3}
+            numberOfBullets={5}
             options={glideOptions}
-            carouselSelector="appFeatureSlider"
+            carouselSelector="evet"
           >
             <Fragment>
               {carousel.map((item) => (

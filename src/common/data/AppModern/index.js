@@ -120,54 +120,8 @@ export const features = {
 /* ------------------------------------ */
 // App slider data section
 /* ------------------------------------ */
-import appSlide1 from "common/assets/image/appModern/wingle1.png";
-import appSlide2 from "common/assets/image/appModern/wingle1.png";
-import appSlide3 from "common/assets/image/appModern/wingle1.png";
-import appIcon from "common/assets/image/appModern/icon1.svg";
 
-export const appSlider = {
-  carousel: [
-    {
-      id: 1,
-      image: appSlide1,
-      title: "App Slide 1",
-    },
-    {
-      id: 2,
-      image: appSlide2,
-      title: "App Slide 1",
-    },
-    {
-      id: 3,
-      image: appSlide3,
-      title: "App Slide 1",
-    },
-  ],
-  title: "Smart Jackpots that you may love this anytime & anywhere",
-  description:
-    "The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.",
-  features: [
-    {
-      id: 1,
-      icon: appIcon,
-      title: "Easy Invoicing",
-      description: "Surprice your clients with professional looking invoices.",
-    },
-    {
-      id: 2,
-      icon: appIcon,
-      title: "UX Planning",
-      description:
-        "UI/UX Design by following and maintaining the latest trends .",
-    },
-    {
-      id: 3,
-      icon: appIcon,
-      title: "Customer Support",
-      description: "A Dedicated support team will be always ready for you.",
-    },
-  ],
-};
+// beauticket
 
 /* ------------------------------------ */
 // Design and built data section
@@ -185,9 +139,20 @@ export const designAndBuilt = {
 /* ------------------------------------ */
 // Product  Slide  section
 /* ------------------------------------ */
-import slide1 from "common/assets/image/appModern/page4.png";
-import slide2 from "common/assets/image/appModern/page4.png";
-import slide3 from "common/assets/image/appModern/page4.png";
+const slide1 =
+  "https://res.cloudinary.com/mobisoft/image/upload/v1617895343/improver/slider/wingle-home_1-min_iegjzu.jpg";
+const slide2 =
+  "https://res.cloudinary.com/mobisoft/image/upload/v1617895342/improver/slider/Group_56-min_fmdsfl.jpg";
+const slide3 =
+  "https://res.cloudinary.com/mobisoft/image/upload/v1617895342/improver/slider/explore-min_fp0049.jpg";
+const slide4 =
+  "https://res.cloudinary.com/mobisoft/image/upload/v1617895342/improver/slider/MiniMidiMaks_home_1-min_yqnabm.jpg";
+const slide5 =
+  "https://res.cloudinary.com/mobisoft/image/upload/v1617895342/improver/slider/Group_66-min_lep7zm.jpg";
+const slide6 =
+  "https://res.cloudinary.com/mobisoft/image/upload/v1617895342/improver/slider/home_2-min_hzwnfg.jpg";
+const slide7 =
+  "https://res.cloudinary.com/mobisoft/image/upload/v1617895341/improver/slider/home_1-min_t4swia.jpg";
 
 export const productData = {
   slogan: "PRODUCT SHOWCASE",
@@ -214,22 +179,28 @@ export const productData = {
 
     {
       id: 4,
-      thumb_url: slide1,
+      thumb_url: slide4,
       link: "#1",
       title: "slide 4",
     },
 
     {
       id: 5,
-      thumb_url: slide3,
+      thumb_url: slide5,
       link: "#1",
       title: "slide 5",
     },
     {
       id: 6,
-      thumb_url: slide2,
+      thumb_url: slide6,
       link: "#1",
       title: "slide 6",
+    },
+    {
+      id: 7,
+      thumb_url: slide7,
+      link: "#1",
+      title: "slide 7",
     },
   ],
 };

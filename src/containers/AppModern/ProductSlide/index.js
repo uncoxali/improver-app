@@ -45,9 +45,8 @@ const params = {
     },
   },
 };
-const ProductSlide = () => {
+const ProductSlide = (props) => {
   const { carousel, slogan, title } = productData;
-
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -71,9 +70,12 @@ const ProductSlide = () => {
                 {carousel.map((item, index) => (
                   <div key={index}>
                     <Link href={item.link} key={`productSlide--key${item.id}`}>
-                      <a className="item_wrapper">
+                      <div
+                        className="item_wrapper"
+                        style={{ marginBottom: "10px" }}
+                      >
                         <Image src={item.thumb_url} alt={item.title} />
-                      </a>
+                      </div>
                     </Link>
                   </div>
                 ))}
@@ -88,7 +90,7 @@ const ProductSlide = () => {
         </CarouselArea>
         {/* End of carousel section */}
       </Container>
-      <div style={{ marginTop: "45px" }}></div>
+      <div style={{ marginTop: "150px" }}></div>
     </ProductSlideWrapper>
   );
 };

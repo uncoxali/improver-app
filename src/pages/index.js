@@ -71,7 +71,15 @@ import { ResetCSS } from "common/assets/css/style";
 import Sticky from "react-stickynode";
 import Navbar from "containers/AppModern/Navbar";
 import Banner from "containers/AppModern/Banner";
-import AppSlider from "containers/AppModern/AppSlider";
+
+import PageEvet from "containers/AppModern/AppSlider/pageEvet";
+import PageBeaticket from "containers/AppModern/AppSlider/pageBeaticket";
+import PageFlow from "containers/AppModern/AppSlider/pageFlow";
+import PageMeetly from "containers/AppModern/AppSlider/pageMeetly";
+import PageWingle from "containers/AppModern/AppSlider/pageWingle";
+import PageMiniMidiMaks from "containers/AppModern/AppSlider/pageMiniMidiMaks";
+import PageStily from "containers/AppModern/AppSlider/pageStily";
+
 import Features from "containers/AppModern/Features";
 import DashboardFeatures from "containers/AppModern/Dashboard";
 import ProductSlide from "containers/AppModern/ProductSlide";
@@ -85,6 +93,8 @@ import GlobalStyle, {
   AppWrapper,
   ContentWrapper,
 } from "containers/AppModern/appModern.style";
+
+import Fade from "react-reveal/Fade";
 
 const Main = () => {
   return (
@@ -117,7 +127,28 @@ const Main = () => {
           <ContentWrapper>
             <Banner />
             <Features />
-            <AppSlider />
+            {/* Pages */}
+            <Fade left>
+              <PageEvet />
+            </Fade>
+            <Fade right>
+              <PageBeaticket />
+            </Fade>
+            <Fade left>
+              <PageFlow />
+            </Fade>
+            <Fade right>
+              <PageWingle />
+            </Fade>
+            <Fade left>
+              <PageMeetly />
+            </Fade>
+            <Fade right>
+              <PageStily />
+            </Fade>
+            <Fade left>
+              <PageMiniMidiMaks />
+            </Fade>
             {/* <DashboardFeatures /> */}
             {/* <Testimonial /> */}
             <DesignedAndBuilt />
