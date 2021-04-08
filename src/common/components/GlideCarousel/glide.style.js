@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 import {
   width,
   height,
@@ -16,7 +16,7 @@ import {
   alignItems,
   justifyContent,
   flexWrap,
-} from 'styled-system';
+} from "styled-system";
 
 // Glide wrapper style
 const GlideWrapper = styled.div`
@@ -27,6 +27,7 @@ const GlideWrapper = styled.div`
 
 // Glide slide wrapper style
 const GlideSlideWrapper = styled.li`
+  box-shadow: 0 5px 10px black;
   ${space}
   ${color}
   ${borders}

@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
-import circleBg from 'common/assets/image/appClassic/circle-bg.svg';
+import circleBg from "common/assets/image/appClassic/circle-bg.svg";
 
 const SectionWrapper = styled.div`
   padding: 75px 0 145px;
@@ -94,7 +94,7 @@ export const TextWrapper = styled.div`
     margin-top: 40px;
   }
   h2 {
-    color: ${themeGet('colors.headingColor', '#0F2137')};
+    color: ${themeGet("colors.headingColor", "#0F2137")};
     font-size: 36px;
     line-height: 44px;
     font-weight: 700;
@@ -111,7 +111,7 @@ export const TextWrapper = styled.div`
     }
   }
   p {
-    color: ${themeGet('colors.textColor', 'rgba(52, 61, 72, 0.8)')};
+    color: ${themeGet("colors.textColor", "rgba(52, 61, 72, 0.8)")};
     font-size: 16px;
     line-height: 28px;
     margin-bottom: 0;
@@ -127,7 +127,7 @@ export const TextWrapper = styled.div`
       margin-left: 10px;
     }
     h3 {
-      color: ${themeGet('colors.headingColor', '#0F2137')};
+      color: ${themeGet("colors.headingColor", "#0F2137")};
       font-size: 18px;
       line-height: 28px;
       font-weight: 500;

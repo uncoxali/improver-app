@@ -26,7 +26,7 @@ const AppSlider = () => {
   return (
     <SectionWrapper>
       <Container>
-        <CarouseWrapper>
+        <CarouseWrapper style={{ boxShadow: "0 50 66" }}>
           <GlideCarousel
             bullets={true}
             controls={false}
