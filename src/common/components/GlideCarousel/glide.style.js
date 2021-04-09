@@ -27,7 +27,6 @@ const GlideWrapper = styled.div`
 
 // Glide slide wrapper style
 const GlideSlideWrapper = styled.li`
-  box-shadow: 0 5px 10px black;
   ${space}
   ${color}
   ${borders}

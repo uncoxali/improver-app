@@ -20,10 +20,10 @@ import SlideMockup from "common/assets/image/appModern/screen.png";
 const params = {
   slidesPerView: 5,
   centeredSlides: true,
-  spaceBetween: 30,
+  spaceBetween: 50,
   loop: true,
   autoplay: {
-    delay: 2500,
+    delay: 2000,
   },
   grabCursor: true,
   pagination: {
@@ -41,11 +41,11 @@ const params = {
     },
     1440: {
       slidesPerView: 5,
-      spaceBetween: 20,
+      spaceBetween: 50,
     },
   },
 };
-const ProductSlide = (props) => {
+const ProductSlide = () => {
   const { carousel, slogan, title } = productData;
   const [loading, setLoading] = useState(false);
   useEffect(() => {

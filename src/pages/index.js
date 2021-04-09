@@ -94,8 +94,6 @@ import GlobalStyle, {
   ContentWrapper,
 } from "containers/AppModern/appModern.style";
 
-import Fade from "react-reveal/Fade";
-
 const Main = () => {
   return (
     <ThemeProvider theme={theme}>
@@ -128,27 +126,27 @@ const Main = () => {
             <Banner />
             <Features />
             {/* Pages */}
-            <Fade left>
+            <div>
               <PageEvet />
-            </Fade>
-            <Fade right>
+            </div>
+            <div>
               <PageBeaticket />
-            </Fade>
-            <Fade left>
+            </div>
+            <div>
               <PageFlow />
-            </Fade>
-            <Fade right>
+            </div>
+            <div>
               <PageWingle />
-            </Fade>
-            <Fade left>
+            </div>
+            <div>
               <PageMeetly />
-            </Fade>
-            <Fade right>
+            </div>
+            <div>
               <PageStily />
-            </Fade>
-            <Fade left>
+            </div>
+            <div>
               <PageMiniMidiMaks />
-            </Fade>
+            </div>
             {/* <DashboardFeatures /> */}
             {/* <Testimonial /> */}
             <DesignedAndBuilt />

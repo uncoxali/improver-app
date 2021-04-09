@@ -11,7 +11,7 @@ const appBeauticket5 =
 import appIconB from "common/assets/image/appModern/icon1.svg";
 
 export const appBeauticket = {
-  beauticket: [
+  carousel: [
     {
       id: 1,
       image: appBeauticket1,
