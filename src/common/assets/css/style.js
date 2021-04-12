@@ -76,7 +76,7 @@ export const ResetCSS = createGlobalStyle`
   .reuseModalHolder {
     padding: 0 !important;
     &.demo_switcher_modal {
-      border: 0 !important;
+      border-radius: 25px !important;
       background-color: rgba(16, 30, 77, 0.9) !important;
       .innerRndComponent {
         border-radius: 8px !important;

@@ -37,36 +37,18 @@ const CloseModalButton = () => (
   />
 );
 
-const ModalContent = () => (
-  <VideoWrapper>
-    <iframe
-      title="Video"
-      src="https://www.youtube.com/embed/8ME-QAlW6Ww"
-      frameBorder="0"
-    />
-  </VideoWrapper>
-);
+// const ModalContent = () => <div></div>;
 
 const Banner = () => {
   // modal handler
-  const handleVideoModal = () => {
-    openModal({
-      config: {
-        className: "video-modal",
-        disableDragging: true,
-        default: {
-          width: "auto",
-          height: "auto",
-          x: 0,
-          y: 0,
-        },
-      },
-      component: ModalContent,
-      componentProps: {},
-      closeComponent: CloseModalButton,
-      closeOnClickOutside: true,
-    });
-  };
+  // const handleVideoModal = () => {
+  //   openModal({
+  //     config: {
+  //       className: "modal",
+  //     },
+  //     component: ModalContent,
+  //   });
+  // };
   return (
     <BannerWrapper id="home">
       <Container>
@@ -78,22 +60,18 @@ const Banner = () => {
             </RatingInfo> */}
           </Fade>
           <Fade up delay={100}>
-            <Heading
-              as="h1"
-              content="The Revolution of
-          Ultimate Platform to
-          monitor your task"
-            />
+            <Heading as="h1" content="Mobil Uygulama Yazılımı ve Geliştirme" />
           </Fade>
           <Fade up delay={200}>
-            <Text
-              content="Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt labore dolore magna
-          ipsum dolor sit amet consectetur."
-            />
+            <Text content="Global yazılım deneyimlerimizi hayalinizdeki uygulama ile birleştirip, hedeflerinizin ötesine taşıyalım." />
           </Fade>
           <Fade up delay={300}>
             <ButtonGroup>
-              <Button className="primary" title="Get a quote" />
+              <Button
+                onClick={() => alert("modal")}
+                className="primary"
+                title="Get a quote"
+              />
               {/* <Button
                 className="text"
                 variant="textButton"
@@ -104,16 +82,8 @@ const Banner = () => {
             </ButtonGroup>
           </Fade>
           <VideoGroup>
-            <img
-              src={videoBanner1}
-              onClick={handleVideoModal}
-              alt="Microsoft"
-            />
-            <img
-              src={videoBanner2}
-              onClick={handleVideoModal}
-              alt="Microsoft"
-            />
+            <img src={videoBanner1} alt="Microsoft" />
+            <img src={videoBanner2} alt="Microsoft" />
           </VideoGroup>
         </BannerContent>
         <BannerImage>

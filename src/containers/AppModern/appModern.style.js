@@ -5,6 +5,8 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Heebo', sans-serif;
   }
+
+  
   .reuseModalParentWrapper,
   .reuseModalOverlay {
     z-index: 99999;

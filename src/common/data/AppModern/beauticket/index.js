@@ -38,9 +38,9 @@ export const appBeauticket = {
       title: "App Beauticket 1",
     },
   ],
-  title: "Smart Jackpots that you may love this anytime & anywhere",
+  title: "Beuticket",
   description:
-    "The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.",
+    "Çevrede bulunan işletmeleri keşfedip, randevu ve bilgi alınabilen rezervasyon uygulaması.",
   features: [
     {
       id: 1,

@@ -38,9 +38,9 @@ export const appEvet = {
       title: "App Evet 1",
     },
   ],
-  title: "Smart Jackpots that you may love this anytime & anywhere",
+  title: "Evet",
   description:
-    "The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.",
+    "Detaylı ürün ve kategori oluşturulmasını destekleyen yeni nesil E-Ticaret sistemi.",
   features: [
     {
       id: 1,

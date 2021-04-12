@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from "react";
+import React, { Fragment, useState, useEffect, Children } from "react";
 import Link from "next/link";
 import Fade from "react-reveal/Fade";
 import Heading from "common/components/Heading";
@@ -21,6 +21,8 @@ const params = {
   slidesPerView: 5,
   centeredSlides: true,
   spaceBetween: 50,
+  paginationClickable: true,
+
   loop: true,
   autoplay: {
     delay: 2000,
@@ -47,6 +49,7 @@ const params = {
 };
 const ProductSlide = () => {
   const { carousel, slogan, title } = productData;
+
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -67,18 +70,18 @@ const ProductSlide = () => {
                 <Image src={SlideMockup} alt="mockup" />
               </MockupWrapper>
               <Swiper {...params}>
-                {carousel.map((item, index) => (
-                  <div key={index}>
-                    <Link href={item.link} key={`productSlide--key${item.id}`}>
+                {Children.toArray(
+                  carousel.map((item, index) => (
+                    <div>
                       <div
                         className="item_wrapper"
                         style={{ marginBottom: "10px" }}
                       >
                         <Image src={item.thumb_url} alt={item.title} />
                       </div>
-                    </Link>
-                  </div>
-                ))}
+                    </div>
+                  ))
+                )}
               </Swiper>
             </Fragment>
           ) : (

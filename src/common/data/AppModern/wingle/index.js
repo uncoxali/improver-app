@@ -39,9 +39,9 @@ export const appWingle = {
       title: "App Meetly 1",
     },
   ],
-  title: "Smart Jackpots that you may love this anytime & anywhere",
+  title: "Wingle",
   description:
-    "The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.",
+    "Kullanıcıların istediği konumda anlık veya çevrimdışı eşleşip, görüntülü sohbet edebileceği yeni nesil arkadaşlık uygulaması.",
   features: [
     {
       id: 1,

@@ -1,5 +1,5 @@
-import styled, { createGlobalStyle } from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled, { createGlobalStyle } from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -54,7 +54,7 @@ export const AppWrapper = styled.div`
   .sticky-active {
     .navbar {
       padding: 20px 0 21px;
-      background-color: ${themeGet('colors.white', '#ffffff')};
+      background-color: ${themeGet("colors.white", "#ffffff")};
       box-shadow: 0px 3px 8px 0px rgba(43, 83, 135, 0.08);
       @media only screen and (max-width: 1366px) {
         padding: 15px 0 16px;
@@ -66,20 +66,20 @@ export const AppWrapper = styled.div`
         li {
           &.is-current {
             a {
-              color: ${themeGet('colors.primary', '#6C247E')};
+              color: ${themeGet("colors.primary", "#6C247E")};
             }
           }
         }
       }
       .reusecore__button {
         &.menubar {
-          color: ${themeGet('colors.secondary', '#000')};
+          color: ${themeGet("colors.secondary", "#000")};
         }
         &.text {
-          color: ${themeGet('colors.secondary', '#000')};
+          color: ${themeGet("colors.secondary", "#000")};
           .btn-icon {
             svg {
-              stroke: ${themeGet('colors.secondary', '#000')};
+              stroke: ${themeGet("colors.secondary", "#000")};
             }
           }
           @media only screen and (max-width: 991px) {
@@ -109,7 +109,7 @@ export const SectionHeader = styled.header`
     font-weight: normal;
     line-height: 2.3;
     margin-bottom: 0px;
-    color: ${themeGet('colors.headingColor', '#000000')};
+    color: ${themeGet("colors.headingColor", "#000000")};
     @media only screen and (max-width: 991px) {
       line-height: 2;
     }
@@ -118,7 +118,7 @@ export const SectionHeader = styled.header`
     font-size: 26px;
     line-height: 1.5;
     font-weight: 700;
-    color: ${themeGet('colors.headingColor', '#000000')};
+    color: ${themeGet("colors.headingColor", "#000000")};
     margin-top: 0;
     margin-bottom: 12px;
     letter-spacing: -0.5px;
@@ -131,7 +131,7 @@ export const SectionHeader = styled.header`
   &.text-white {
     h2,
     p {
-      color: ${themeGet('colors.white', '#ffffff')};
+      color: ${themeGet("colors.white", "#ffffff")};
     }
   }
 `;

@@ -1,9 +1,9 @@
-import styled, { createGlobalStyle } from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled, { createGlobalStyle } from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
-import Substract from 'common/assets/image/app/substract.png';
-import SubstractHover from 'common/assets/image/app/substract-hover.png';
-import BannerPattern from 'common/assets/image/app/pattern.png';
+import Substract from "common/assets/image/app/substract.png";
+import SubstractHover from "common/assets/image/app/substract-hover.png";
+import BannerPattern from "common/assets/image/app/pattern.png";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -90,7 +90,7 @@ const GlobalStyle = createGlobalStyle`
       position: fixed !important;
       z-index: 999991 !important;
       background-color: transparent !important;
-      color: ${themeGet('colors.white', '#ffffff')} !important;
+      color: ${themeGet("colors.white", "#ffffff")} !important;
       top: 10px !important;
       right: 10px !important;
 
@@ -105,7 +105,7 @@ const GlobalStyle = createGlobalStyle`
       }
 
       &.alt {
-        background-color: ${themeGet('colors.primary', '#1a73e8')} !important;
+        background-color: ${themeGet("colors.primary", "#1a73e8")} !important;
         border-radius: 50% !important;
         z-index: 999999 !important;
         padding: 0 !important;
@@ -123,7 +123,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     .reuseModalHolder {
-      border: 0 !important;
+      border-radius: 35px !important;
       background-color: transparent !important;
 
       &.search-modal,
@@ -215,10 +215,10 @@ const AppWrapper = styled.div`
 
     .reusecore__button {
       .btn-icon {
-        color: ${themeGet('colors.white', '#ffffff')};
+        color: ${themeGet("colors.white", "#ffffff")};
         font-size: 18px;
         @media only screen and (max-width: 1100px) {
-          color: ${themeGet('colors.primary', '#1a73e8')};
+          color: ${themeGet("colors.primary", "#1a73e8")};
         }
         @media only screen and (max-width: 420px) {
           font-size: 14px;
@@ -240,16 +240,16 @@ const AppWrapper = styled.div`
         width: 40px;
       }
       > span {
-        background-color: ${themeGet('colors.white', '#ffffff')};
+        background-color: ${themeGet("colors.white", "#ffffff")};
         @media only screen and (max-width: 990px) {
-          background-color: ${themeGet('colors.primary', '#1a73e8')};
+          background-color: ${themeGet("colors.primary", "#1a73e8")};
         }
       }
     }
   }
   .sticky-nav-active {
     .reusecore__navbar {
-      background-color: ${themeGet('colors.white', '#ffffff')};
+      background-color: ${themeGet("colors.white", "#ffffff")};
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       padding: 5px 15px;
       transition: all 0.2s ease;
@@ -268,11 +268,11 @@ const AppWrapper = styled.div`
 
       .reusecore__button {
         .btn-icon {
-          color: ${themeGet('colors.primary', '#1a73e8')};
+          color: ${themeGet("colors.primary", "#1a73e8")};
         }
       }
       .hamburgMenu__bar > span {
-        background-color: ${themeGet('colors.primary', '#1a73e8')};
+        background-color: ${themeGet("colors.primary", "#1a73e8")};
       }
     }
   }
@@ -426,7 +426,7 @@ const AppWrapper = styled.div`
                   text-align: center;
                 }
                 &::before {
-                  content: 'CUSTOMER OPINIONS';
+                  content: "CUSTOMER OPINIONS";
                   box-sizing: border-box;
                   margin-bottom: 10px;
                   margin-top: 0px;
@@ -500,7 +500,7 @@ const AppWrapper = styled.div`
 
           &::before {
             top: 11px;
-            content: '';
+            content: "";
             width: 10px;
             height: 2px;
             background-color: #1a73e8;
@@ -511,7 +511,7 @@ const AppWrapper = styled.div`
             left: 0;
           }
           &::after {
-            content: '';
+            content: "";
             width: 10px;
             height: 2px;
             background-color: #1a73e8;
@@ -554,7 +554,7 @@ const AppWrapper = styled.div`
 
           &::before {
             top: 11px;
-            content: '';
+            content: "";
             width: 10px;
             height: 2px;
             background-color: #1a73e8;
@@ -565,7 +565,7 @@ const AppWrapper = styled.div`
             left: 20px;
           }
           &::after {
-            content: '';
+            content: "";
             width: 10px;
             height: 2px;
             background-color: #1a73e8;
@@ -818,7 +818,7 @@ const AppWrapper = styled.div`
                   }
                 }
                 &::before {
-                  content: '';
+                  content: "";
                   position: absolute;
                   display: block;
                   width: 100%;
@@ -835,7 +835,7 @@ const AppWrapper = styled.div`
                   pointer-events: none;
                 }
                 &::after {
-                  content: '';
+                  content: "";
                   position: absolute;
                   display: block;
                   width: 100%;

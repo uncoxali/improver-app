@@ -86,33 +86,33 @@ export const features = {
       id: 1,
       color: "#F55767",
       icon: featureIcon1,
-      title: "App Development",
+      title: "IMPROVER FACE DETECTION",
       description:
-        "We are specialized at custom Saas Application Development and special features.",
+        "Yüz tarama ile sahte ve gerçek kullanıcıları kolayca ayırt edebileceğiniz doğrulama sistemi.",
     },
     {
       id: 2,
       color: "#ff4742",
       icon: featureIcon2,
-      title: "10 Times Award",
+      title: "IMPROVER RTC",
       description:
-        "We are globally recognised for our services and won a lot of prices around the world .",
+        "Uygulamalarınız ile entegre çalışabilecek, optimize görüntülü/sesli sohbet sistemi.",
     },
     {
       id: 3,
       color: "#fb5781",
       icon: featureIcon3,
-      title: "Cloud Storage",
+      title: "IMPORVER MAPS",
       description:
-        "LiteSpeed Web Server known for its high performance and low resource consumption.",
+        "Diğer harita sağlayıcılardan bağımsız çalışan Mercator Projection temelli bir harita sistemi.",
     },
     {
       id: 4,
       color: "#f18e47",
       icon: featureIcon4,
-      title: "Customization",
+      title: "ASO",
       description:
-        "Client Satisfaction is our first priority and We are best at it. Keep In Touch for the best output. ",
+        "Geliştirdiğimiz Aso Analytic algoritmamız ile belirlenen anahtar kelimede %100 verim alıp, organik olarak marketinizde sıralamanızı yükseltiyoruz.",
     },
   ],
 };
@@ -130,76 +130,77 @@ import codingImage from "common/assets/image/appModern/code.png";
 
 export const designAndBuilt = {
   image: codingImage,
-  slogan: "CODE INTEGRATION",
-  title: "Introducing coding features of our apps with Customization",
+  slogan: "IMPROVER STUDIO",
+  title: "Proje Geliştirme ve Destek",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt labore dolore features that Lorem ipsum dolor sit amet consectetur.",
+    "Tüm deneyimlerimizi size aktararak uygulamanızı geliştirmede yardımcı oluyor, çıkış sonrası destek vererek ilerleyeceğiniz yolda birlikte hareket ediyoruz.",
 };
 
 /* ------------------------------------ */
 // Product  Slide  section
 /* ------------------------------------ */
-const slide1 =
-  "https://res.cloudinary.com/mobisoft/image/upload/v1617895343/improver/slider/wingle-home_1-min_iegjzu.jpg";
-const slide2 =
-  "https://res.cloudinary.com/mobisoft/image/upload/v1617895342/improver/slider/Group_56-min_fmdsfl.jpg";
-const slide3 =
-  "https://res.cloudinary.com/mobisoft/image/upload/v1617895342/improver/slider/explore-min_fp0049.jpg";
-const slide4 =
-  "https://res.cloudinary.com/mobisoft/image/upload/v1617895342/improver/slider/MiniMidiMaks_home_1-min_yqnabm.jpg";
-const slide5 =
-  "https://res.cloudinary.com/mobisoft/image/upload/v1617895342/improver/slider/Group_66-min_lep7zm.jpg";
-const slide6 =
-  "https://res.cloudinary.com/mobisoft/image/upload/v1617895342/improver/slider/home_2-min_hzwnfg.jpg";
-const slide7 =
-  "https://res.cloudinary.com/mobisoft/image/upload/v1617895341/improver/slider/home_1-min_t4swia.jpg";
+// const slide1 =
+//   "https://res.cloudinary.com/mobisoft/image/upload/v1617895343/improver/slider/wingle-home_1-min_iegjzu.jpg";
+// const slide2 =
+//   "https://res.cloudinary.com/mobisoft/image/upload/v1617895342/improver/slider/Group_56-min_fmdsfl.jpg";
+// const slide3 =
+//   "https://res.cloudinary.com/mobisoft/image/upload/v1617895342/improver/slider/explore-min_fp0049.jpg";
+// const slide4 =
+//   "https://res.cloudinary.com/mobisoft/image/upload/v1617895342/improver/slider/MiniMidiMaks_home_1-min_yqnabm.jpg";
+// const slide5 =
+//   "https://res.cloudinary.com/mobisoft/image/upload/v1617895342/improver/slider/Group_66-min_lep7zm.jpg";
+// const slide6 =
+//   "https://res.cloudinary.com/mobisoft/image/upload/v1617895342/improver/slider/home_2-min_hzwnfg.jpg";
+// const slide7 =
+//   "https://res.cloudinary.com/mobisoft/image/upload/v1617895341/improver/slider/home_1-min_t4swia.jpg";
+
+import slide1 from "common/assets/image/appModern/Slider/wingle.png";
+import slide2 from "common/assets/image/appModern/Slider/flow.png";
+import slide3 from "common/assets/image/appModern/Slider/stily.png";
+import slide4 from "common/assets/image/appModern/Slider/meetly.png";
+import slide5 from "common/assets/image/appModern/Slider/beaticket.png";
+import slide6 from "common/assets/image/appModern/Slider/evet.png";
+import slide7 from "common/assets/image/appModern/Slider/MiniMidiMaks.png";
 
 export const productData = {
-  slogan: "PRODUCT SHOWCASE",
-  title: "Meet Client Satisfaction by using our product",
+  slogan: "REFERANSLARIMIZ",
+  title: "İŞ ORTAKLIĞI İÇİN TEKLİF İSTE ",
   carousel: [
     {
       id: 1,
       thumb_url: slide1,
-      link: "#1",
       title: "slide 1",
     },
     {
       id: 2,
       thumb_url: slide2,
-      link: "#1",
       title: "slide 2",
     },
     {
       id: 3,
       thumb_url: slide3,
-      link: "#1",
       title: "slide 3",
     },
 
     {
       id: 4,
       thumb_url: slide4,
-      link: "#1",
       title: "slide 4",
     },
 
     {
       id: 5,
       thumb_url: slide5,
-      link: "#1",
       title: "slide 5",
     },
     {
       id: 6,
       thumb_url: slide6,
-      link: "#1",
       title: "slide 6",
     },
     {
       id: 7,
       thumb_url: slide7,
-      link: "#1",
       title: "slide 7",
     },
   ],
@@ -335,9 +336,9 @@ import member6 from "common/assets/image/appModern/6.png";
 import member7 from "common/assets/image/appModern/7.png";
 
 export const teamportfolio = {
-  title: "Meet our awesome team members, work behind the sense",
+  title: "İŞ ORTAKLIĞI İÇİN TEKLİF İSTE ",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt labore dolore features that Lorem ipsum dolor sit amet consectetur.",
+    "Birlikte iyi bir iş çıkarabileceğimize inanıyoruz, bunu kanıtlamamıza izin verin.",
 
   teammember: [
     {

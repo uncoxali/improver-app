@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
 const BannerWrapper = styled.div`
   padding-top: 100px;
@@ -70,7 +70,7 @@ export const BannerContent = styled.div`
     font-size: 46px;
     line-height: 55px;
     font-weight: 700;
-    color: ${themeGet('colors.menu', '#0D233E')};
+    color: ${themeGet("colors.menu", "#0D233E")};
     margin-bottom: 24px;
     @media only screen and (max-width: 1366px) {
       font-size: 32px;
@@ -90,12 +90,12 @@ export const RatingInfo = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 22px;
-  color: ${themeGet('colors.menu', '#0D233E')};
+  color: ${themeGet("colors.menu", "#0D233E")};
 
   .rating {
     margin-right: 10px;
     .star {
-      color: ${themeGet('colors.white', '#fff')};
+      color: ${themeGet("colors.white", "#fff")};
     }
     .star-o {
       color: #e8e8e8;
@@ -131,7 +131,7 @@ export const ButtonGroup = styled.div`
     padding-right: 16px;
 
     &.primary {
-      background-color: ${themeGet('colors.white', '#fff')};
+      background-color: ${themeGet("colors.white", "#fff")};
       color: rgb(15, 33, 55);
       font-size: 16px;
       letter-spacing: -0.1px;
@@ -142,7 +142,7 @@ export const ButtonGroup = styled.div`
 
     &.text {
       font-size: 16px;
-      color: ${themeGet('colors.white', '#fff')};
+      color: ${themeGet("colors.white", "#fff")};
       letter-spacing: -0.1px;
       font-weight: 500;
       .btn-icon {
@@ -178,12 +178,31 @@ export const VideoGroup = styled.div`
     }
   }
 `;
+
+export const BoxModal = styled.div`
+  @media only screen and (max-width: 1440px) {
+    height: 600px;
+    width: 1200px;
+    background-color: red;
+  }
+  @media only screen and (max-width: 1099px) {
+    padding: 55px 0 55px;
+    max-width: 920px;
+  }
+  @media only screen and (max-width: 991px) {
+    padding: 40px 0;
+  }
+  @media only screen and (max-width: 600px) {
+    padding: 25px 0 40px;
+  }
+`;
 export const VideoWrapper = styled.div`
+  border-radius: 25px !important;
   max-width: 100%;
-  width: 900px;
+  width: 1400px;
   position: relative;
   &:before {
-    content: '';
+    content: "";
     display: block;
     padding-top: 56.25%;
   }
@@ -218,7 +237,7 @@ export const CustomerWrapper = styled.div`
 
   p {
     margin: 0 12px 0 0;
-    color: ${themeGet('colors.menu', '#0D233E')};
+    color: ${themeGet("colors.menu", "#0D233E")};
     @media only screen and (max-width: 991px) {
       display: none;
     }

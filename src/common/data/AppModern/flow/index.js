@@ -45,9 +45,9 @@ export const appFlow = {
       title: "App Flow 1",
     },
   ],
-  title: "Smart Jackpots that you may love this anytime & anywhere",
+  title: "Flow",
   description:
-    "The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.",
+    "Kullanıcıların kendi programlarını oluşturabildiği yoga ve meditasyon uygulaması.",
   features: [
     {
       id: 1,

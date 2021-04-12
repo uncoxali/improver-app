@@ -89,12 +89,43 @@ import TeamPortfolio from "containers/AppModern/TeamPortfoilo";
 import Testimonial from "containers/AppModern/Testimonial";
 import Newsletter from "containers/AppModern/Newsletter";
 import Footer from "containers/AppModern/Footer";
+import ContactUs from "containers/AppModern/ContactUs";
 import GlobalStyle, {
   AppWrapper,
   ContentWrapper,
+  Contact,
 } from "containers/AppModern/appModern.style";
-
+import {
+  ModalProvider,
+  Modal,
+  useModal,
+  ModalTransition,
+} from "react-simple-hook-modal";
 const Main = () => {
+  const { isModalOpen, openModal, closeModal } = useModal();
+  // if (true)
+  //   return (
+  // <ModalProvider>
+  //   <button onClick={openModal}>Open</button>
+  //   <Modal
+  //     id="any-unique-identifier"
+  //     isOpen={isModalOpen}
+  //     transition={ModalTransition.BOTTOM_UP}
+  //   >
+  //     <div style={{ display: "flex", justifyContent: "center" }}>
+  //       <div
+  //         style={{
+  //           backgroundColor: "red",
+  //           height: "200px",
+  //           width: "600px",
+  //         }}
+  //       >
+  //         <button onClick={closeModal}>Open</button>
+  //       </div>
+  //     </div>
+  //   </Modal>
+  // </ModalProvider>
+  //   );
   return (
     <ThemeProvider theme={theme}>
       <>
@@ -124,6 +155,7 @@ const Main = () => {
           </Sticky>
           <ContentWrapper>
             <Banner />
+
             <Features />
             {/* Pages */}
             <div>
@@ -159,6 +191,7 @@ const Main = () => {
         </AppWrapper>
         {/* end of app classic landing */}
       </>
+      {/* <ContactUs /> */}
     </ThemeProvider>
   );
 };

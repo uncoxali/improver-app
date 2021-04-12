@@ -6,12 +6,17 @@ import Container from "common/components/UI/Container";
 import FeatureBlock from "common/components/FeatureBlock";
 import GlideCarousel from "common/components/GlideCarousel";
 import GlideSlide from "common/components/GlideCarousel/glideSlide";
-import SectionWrapper, { CarouseWrapper, TextWrapper } from "./appSlider.style";
+import SectionWrapper, {
+  CarouseWrapper,
+  TextWrapper,
+  MockupWrapper,
+} from "./appSlider.style";
 import LogoGoogle from "common/assets/image/appModern/google.png";
 import LogoApple from "common/assets/image/appModern/apple.png";
 
 import { appEvet } from "common/data/AppModern/evet";
 import Fade from "react-reveal/Fade";
+import SlideMockup from "common/assets/image/appModern/screen.png";
 
 const AppSlider = () => {
   const { title, description, features, carousel } = appEvet;

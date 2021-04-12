@@ -32,9 +32,9 @@ export const appMeetly = {
       title: "App Meetly 1",
     },
   ],
-  title: "Smart Jackpots that you may love this anytime & anywhere",
+  title: "Meetly",
   description:
-    "The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.",
+    "Kullanıcıların istediği konumda eşleşerek sohbet edebildiği arkadaşlık uygulaması.",
   features: [
     {
       id: 1,

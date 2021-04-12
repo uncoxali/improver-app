@@ -23,6 +23,23 @@ const SectionWrapper = styled.div`
   }
 `;
 
+export const MockupWrapper = styled.div`
+  margin-bottom: 81px;
+  background-color: ${themeGet("colors.banner", "rgb(29, 35, 54)")};
+  padding-top: 80px;
+  overflow: hidden;
+  @media only screen and (max-width: 1440px) {
+    margin-bottom: 30px;
+  }
+  @media only screen and (max-width: 1440px) {
+    padding-top: 60px;
+  }
+  @media only screen and (max-width: 767px) {
+    margin-bottom: 42px;
+    padding-top: 40px;
+  }
+`;
+
 export const CarouseWrapper = styled.div`
   width: calc(100% - 428px);
   background-image: url(${circleBg});

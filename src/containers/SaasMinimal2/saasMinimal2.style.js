@@ -1,5 +1,5 @@
-import styled, { createGlobalStyle } from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled, { createGlobalStyle } from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
 export const GlobalStyle = createGlobalStyle`
    
@@ -30,7 +30,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .reuseModalHolder {
-    border: 0 !important;
+    border-radius: 25px;
     background-color: transparent !important;
     
     &.video-modal {
@@ -84,22 +84,22 @@ export const ContentWrapper = styled.div`
     .menu-items {
       li {
         a {
-          color: ${themeGet('colors.textPrimary')};
+          color: ${themeGet("colors.textPrimary")};
         }
         &:nth-last-child(2) a {
           border-bottom-color: rgba(0, 0, 0, 0.6);
           &:hover {
-            color: ${themeGet('colors.primary')};
+            color: ${themeGet("colors.primary")};
           }
         }
         &:last-child a {
-          background-color: ${themeGet('colors.primary')};
-          color: ${themeGet('colors.white')};
+          background-color: ${themeGet("colors.primary")};
+          color: ${themeGet("colors.white")};
         }
       }
       .is-current {
         a {
-          color: ${themeGet('colors.primary')};
+          color: ${themeGet("colors.primary")};
         }
       }
     }
