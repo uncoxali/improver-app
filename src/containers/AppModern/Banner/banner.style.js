@@ -55,6 +55,274 @@ const BannerWrapper = styled.div`
       display: none;
     }
   }
+
+  #colorLinear {
+    background-color: aqua;
+  }
+`;
+
+export const ModalGroup = styled.div`
+  .modal-parent {
+    display: flex;
+    width: 1100px;
+  }
+
+  .text-color {
+    margin-top: 40px;
+    color: white;
+    font-size: 20px;
+  }
+  .form {
+    width: 700px;
+    padding: 20px;
+  }
+  .logo-image {
+    width: 200px;
+  }
+  .close-btn {
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+    margin-top: 10px;
+  }
+  .input-name {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+  }
+  .input {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .input-mail {
+    padding: 10px;
+    width: 260px;
+    border: none;
+    border-bottom: 1px solid black;
+  }
+  .input-number {
+    padding: 10px;
+    width: 260px;
+    border: none;
+    border-bottom: 1px solid black;
+  }
+  .contact-us {
+    padding: 50px;
+    width: 500px;
+    background: rgb(166, 16, 138);
+    background: linear-gradient(
+      90deg,
+      rgba(166, 16, 138, 0.93) 4%,
+      rgba(129, 9, 103, 1) 60%
+    );
+
+    .contact {
+      display: flex;
+      margin-top: 20px;
+    }
+    .telephone {
+      width: 30px;
+      height: 30px;
+      margin-top: 10px;
+    }
+    .text-number {
+      color: white;
+      margin-left: 30px;
+    }
+  }
+
+  .radio-btn {
+    margin-top: 60px;
+  }
+
+  .radio {
+    display: flex;
+    margin-top: 30px;
+  }
+  .radiob {
+    margin-left: 20px;
+  }
+  .text-area {
+    margin-top: 50px;
+  }
+  .textarea {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+  }
+
+  .close-mobile {
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+    margin-top: 5px;
+    color: white;
+  }
+  .submit {
+    margin-top: 10px;
+    float: right;
+    border: none;
+    width: 260px;
+    padding: 10px;
+    color: white;
+    border-radius: 35px;
+    background: rgb(166, 16, 138);
+    background: linear-gradient(
+      90deg,
+      rgba(150, 16, 138, 0.8) 4%,
+      rgba(115, 9, 103, 1) 60%
+    );
+  }
+
+  .nav-text {
+    display: none;
+  }
+  @media only screen and (min-width: 900) {
+    .modal-parent {
+      width: 500px;
+    }
+    .contact-us {
+      display: none;
+      padding: 50px;
+      width: 500px;
+      background: rgb(166, 16, 138);
+      background: linear-gradient(
+        90deg,
+        rgba(166, 16, 138, 0.93) 4%,
+        rgba(129, 9, 103, 1) 60%
+      );
+
+      .contact {
+        display: flex;
+        margin-top: 20px;
+      }
+      .telephone {
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+      }
+      .text-number {
+        color: white;
+        margin-left: 30px;
+      }
+    }
+  }
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    .modal-parent {
+      display: block;
+      width: 340px;
+      overflow-x: hidden;
+    }
+    .close-btn {
+      cursor: pointer;
+      font-size: 30px;
+      position: absolute;
+      right: 20px;
+      margin-top: 7px;
+      display: none;
+    }
+    .nav-text {
+      display: block;
+      color: white;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+    .nav-mobile {
+      display: flex;
+      justify-content: space-between;
+      height: 45px;
+      background: rgb(166, 16, 138);
+      background: linear-gradient(
+        90deg,
+        rgba(166, 16, 138, 0.7) 4%,
+        rgba(129, 9, 103, 1) 60%
+      );
+    }
+
+    .submit {
+      float: none;
+      border: none;
+      width: 300px;
+      padding: 10px;
+      color: white;
+      border-radius: 35px;
+      background: rgb(166, 16, 138);
+      background: linear-gradient(
+        90deg,
+        rgba(150, 16, 138, 0.8) 4%,
+        rgba(115, 9, 103, 1) 60%
+      );
+    }
+    .input-name {
+      padding: 2px;
+      border: none;
+      border-bottom: 1px solid black;
+      width: 200px;
+    }
+    .input-mail {
+      padding: 2px;
+      width: 200px;
+      border: none;
+      border-bottom: 1px solid black;
+    }
+    .input-number {
+      padding: 2px;
+      width: 200px;
+      border: none;
+      border-bottom: 1px solid black;
+    }
+    .radio-btn {
+      margin-top: 60px;
+      display: none;
+    }
+    .text-area {
+      margin-top: 30px;
+    }
+    .textarea {
+      padding: 2px;
+      border: none;
+      border-bottom: 1px solid black;
+      width: 300px;
+      margin-bottom: 20px;
+    }
+    .input {
+      margin-top: 10px;
+      display: block;
+      width: 100%;
+      justify-content: space-between;
+    }
+    .contact-us {
+      display: none;
+      padding: 50px;
+      width: 500px;
+      background: rgb(166, 16, 138);
+      background: linear-gradient(
+        90deg,
+        rgba(166, 16, 138, 0.93) 4%,
+        rgba(129, 9, 103, 1) 60%
+      );
+
+      .contact {
+        display: flex;
+        margin-top: 20px;
+      }
+      .telephone {
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+      }
+      .text-number {
+        color: white;
+        margin-left: 30px;
+      }
+    }
+  }
 `;
 
 export const BannerContent = styled.div`

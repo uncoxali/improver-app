@@ -1,9 +1,9 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
 const FooterArea = styled.footer`
   padding: 96px 0 60px;
-  background-color: ${themeGet('colors.secondary', '#09142E')};
+  background-color: ${themeGet("colors.secondary", "#09142E")};
   @media only screen and (max-width: 1366px) {
     padding-top: 80px;
   }
@@ -57,7 +57,7 @@ export const WidgetArea = styled.div`
     }
 
     h3 {
-      color: ${themeGet('colors.white', '#ffffff')};
+      color: ${themeGet("colors.white", "#ffffff")};
       font-size: 18px;
       line-height: 24px;
       font-weight: 500;
@@ -115,7 +115,7 @@ export const MenuItem = styled.li`
     margin: 5px 15px;
   }
   a {
-    color: ${themeGet('colors.white', '#ffffff')};
+    color: ${themeGet("colors.white", "#ffffff")};
     transition: all 0.3s ease;
     &:hover {
       color: rgba(255, 255, 255, 0.7);
@@ -127,6 +127,41 @@ export const CopyrightText = styled.p`
   color: rgba(255, 255, 255, 0.5);
   margin-bottom: 0;
   font-size: 14px;
+  margin-bottom: 2rem;
+`;
+
+export const Footer_mobile = styled.div`
+  display: none;
+  padding: 0;
+  margin: 0;
+  @media only screen and (max-width: 667px) {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    height: 55px;
+    z-index: 100;
+    .icon-wrapper {
+      display: flex;
+      /* margin-left: 0.5rem; */
+      justify-content: center;
+      align-items: center;
+      background: #26d367;
+      padding: 1rem;
+      width: 100%;
+    }
+    .phone {
+      background: black;
+      color: #fff;
+    }
+    svg {
+      fill: #fff;
+      color: #fff;
+      margin-left: 1rem;
+    }
+  }
 `;
 
 export default FooterArea;

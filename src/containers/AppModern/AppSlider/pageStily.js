@@ -29,21 +29,23 @@ const AppSlider = () => {
       <Container>
         <CarouseWrapper>
           <Fade left>
-            <GlideCarousel
-              bullets={true}
-              controls={false}
-              numberOfBullets={5}
-              options={glideOptions}
-              carouselSelector="stily"
-            >
-              <Fragment>
-                {carousel.map((item) => (
-                  <GlideSlide key={`feature-side--key${item.id}`}>
-                    <Image src={item.image} alt={item.title} />
-                  </GlideSlide>
-                ))}
-              </Fragment>
-            </GlideCarousel>
+            <div className="slider-wrapper">
+              <GlideCarousel
+                bullets={true}
+                controls={false}
+                numberOfBullets={5}
+                options={glideOptions}
+                carouselSelector="stily"
+              >
+                <Fragment>
+                  {carousel.map((item) => (
+                    <GlideSlide key={`feature-side--key${item.id}`}>
+                      <Image src={item.image} alt={item.title} />
+                    </GlideSlide>
+                  ))}
+                </Fragment>
+              </GlideCarousel>
+            </div>
           </Fade>
         </CarouseWrapper>
         <Fade right>
@@ -62,23 +64,14 @@ const AppSlider = () => {
           </TextWrapper>
         </Fade>
       </Container>
-      <div
-        className=""
-        style={{
-          marginTop: "50px",
-          display: "flex",
-          justifyContent: "center",
-          height: "100px",
-        }}
-      >
-        <div style={{ marginTop: "30px" }}>
-          <img src={LogoGoogle} width="180px" />
-          <img
-            src={LogoApple}
-            width="170px"
-            height="47px"
-            style={{ marginBottom: "12px" }}
-          />
+      <div className="mt-3 flex justify-center h-20">
+        <div className="flex absolute lg:mt-20">
+          <div className="w-44 ml-10">
+            <img src={LogoGoogle} />
+          </div>
+          <div className="w-36 mr-10 mt-3">
+            <img className="" src={LogoApple} />
+          </div>
         </div>
       </div>
     </SectionWrapper>

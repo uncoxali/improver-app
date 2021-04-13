@@ -2,9 +2,11 @@ import styled from "styled-components";
 import { themeGet } from "@styled-system/theme-get";
 
 import circleBg from "common/assets/image/appClassic/circle-bg.svg";
+import screen from "common/assets/image/appModern/screen.png";
 
 const SectionWrapper = styled.div`
   padding: 75px 0 145px;
+  margin-top: 1rem;
   @media only screen and (max-width: 1440px) {
     padding: 50px 0 75px;
   }
@@ -45,6 +47,8 @@ export const CarouseWrapper = styled.div`
   background-image: url(${circleBg});
   background-repeat: no-repeat;
   background-position: center center;
+  position: relative;
+  /* background-color: red; */
   @media only screen and (max-width: 1366px) {
     background-size: contain;
     align-self: center;
@@ -56,6 +60,23 @@ export const CarouseWrapper = styled.div`
     width: 100%;
     align-self: flex-start;
   }
+  .slider-wrapper {
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      top: -15px;
+      left: 0;
+      width: 100%;
+      height: 105%;
+      background-image: url(${screen});
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      pointer-events: none;
+    }
+  }
+
   .glide {
     width: 337px;
     margin: 0 auto;
@@ -77,7 +98,7 @@ export const CarouseWrapper = styled.div`
       flex-direction: column;
       position: absolute;
       top: calc(50% - 50px);
-      left: -21px;
+      left: -51px;
       > button.glide__bullet {
         width: 4px;
         height: 20px;
