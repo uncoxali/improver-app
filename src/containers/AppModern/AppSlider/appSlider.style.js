@@ -192,15 +192,17 @@ export const App_store = styled.div`
     width: 200px;
   }
   .parent {
+    margin-left: 15px;
     margin-top: 25px;
-    display: flex;
     justify-content: center;
+    align-items: center;
     height: 100px;
+    display: block;
   }
 
   .parent-img {
     display: flex;
-    position: absolute;
+    justify-content: center;
     margin-top: 100px;
   }
   @media only screen and (max-width: 700px) {

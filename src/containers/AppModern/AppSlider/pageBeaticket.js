@@ -72,8 +72,8 @@ const AppSlider = () => {
         </Fade>
       </Container>
       <App_store>
-        <div className="parent mt-3 flex justify-center h-20">
-          <div className="parent-img flex absolute lg:mt-20">
+        <div className="parent">
+          <div className="parent-img ">
             <div className="img-div">
               <img src={LogoGoogle} width="200px" />
             </div>

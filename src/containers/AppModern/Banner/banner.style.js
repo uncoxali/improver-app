@@ -114,11 +114,11 @@ export const ModalGroup = styled.div`
   .contact-us {
     padding: 50px;
     width: 500px;
-    background: rgb(166, 16, 138);
+    background: rgb(100, 16, 150);
     background: linear-gradient(
       90deg,
-      rgba(166, 16, 138, 0.93) 4%,
-      rgba(129, 9, 103, 1) 60%
+      rgba(180, 20, 120, 0.8) 20%,
+      rgba(150, 9, 103, 1) 100%
     );
 
     .contact {
@@ -172,11 +172,11 @@ export const ModalGroup = styled.div`
     padding: 10px;
     color: white;
     border-radius: 35px;
-    background: rgb(166, 16, 138);
+    background: rgb(100, 16, 150);
     background: linear-gradient(
       90deg,
-      rgba(150, 16, 138, 0.8) 4%,
-      rgba(115, 9, 103, 1) 60%
+      rgba(180, 20, 120, 0.8) 20%,
+      rgba(150, 9, 103, 1) 100%
     );
   }
 
@@ -191,11 +191,11 @@ export const ModalGroup = styled.div`
       display: none;
       padding: 50px;
       width: 500px;
-      background: rgb(166, 16, 138);
+      background: rgb(100, 16, 150);
       background: linear-gradient(
         90deg,
-        rgba(166, 16, 138, 0.93) 4%,
-        rgba(129, 9, 103, 1) 60%
+        rgba(180, 20, 120, 0.8) 20%,
+        rgba(150, 9, 103, 1) 100%
       );
 
       .contact {
@@ -240,11 +240,11 @@ export const ModalGroup = styled.div`
       display: flex;
       justify-content: space-between;
       height: 45px;
-      background: rgb(166, 16, 138);
+      background: rgb(100, 16, 150);
       background: linear-gradient(
         90deg,
-        rgba(166, 16, 138, 0.7) 4%,
-        rgba(129, 9, 103, 1) 60%
+        rgba(180, 20, 120, 0.8) 20%,
+        rgba(150, 9, 103, 1) 100%
       );
     }
 
@@ -255,11 +255,11 @@ export const ModalGroup = styled.div`
       padding: 10px;
       color: white;
       border-radius: 35px;
-      background: rgb(166, 16, 138);
+      background: rgb(100, 16, 150);
       background: linear-gradient(
         90deg,
-        rgba(150, 16, 138, 0.8) 4%,
-        rgba(115, 9, 103, 1) 60%
+        rgba(180, 20, 120, 0.8) 20%,
+        rgba(150, 9, 103, 1) 100%
       );
     }
     .input-name {
