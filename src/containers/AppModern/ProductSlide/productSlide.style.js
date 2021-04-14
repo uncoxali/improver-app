@@ -1,5 +1,5 @@
-import styled, { keyframes } from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled, { keyframes } from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
 const rotate = keyframes`
 	to {
@@ -14,7 +14,7 @@ const grow = keyframes`
 
 const ProductSlideWrapper = styled.div`
   margin-bottom: 81px;
-  background-color: ${themeGet('colors.banner', 'rgb(29, 35, 54)')};
+  background-color: ${themeGet("colors.banner", "rgb(29, 35, 54)")};
   padding-top: 80px;
   overflow: hidden;
   @media only screen and (max-width: 1440px) {
@@ -38,13 +38,13 @@ export const Container = styled.div`
   margin-bottom: -65px;
   flex-direction: column;
   @media only screen and (max-width: 1600px) {
-    ${'' /* padding: 81px; */}
+    ${"" /* padding: 81px; */}
   }
   @media only screen and (max-width: 1360px) {
-    ${'' /* padding: 60px; */}
+    ${"" /* padding: 60px; */}
   }
   @media only screen and (max-width: 991px) {
-    ${'' /* padding: 30px; */}
+    ${"" /* padding: 30px; */}
   }
   @media only screen and (max-width: 767px) {
     flex-direction: column;
@@ -82,11 +82,11 @@ export const CarouselArea = styled.div`
       }
 
       &::after {
-        content: '';
+        content: "";
         display: block;
         width: 100%;
         height: 100%;
-        ${'' /* background: rgba(0,0,0,0.8); */}
+        ${"" /* background: rgba(0,0,0,0.8); */}
         position: absolute;
         bottom: 0;
         left: 0;
@@ -104,7 +104,7 @@ export const CarouselArea = styled.div`
     &.swiper-slide-next {
       .item_wrapper {
         &::after {
-          content: '';
+          content: "";
           display: block;
           width: 100%;
           height: 100%;
@@ -121,7 +121,7 @@ export const CarouselArea = styled.div`
       display: block;
       .item_wrapper {
         &::after {
-          content: '';
+          content: "";
           display: block;
           width: 100%;
           height: 100%;
@@ -136,7 +136,7 @@ export const CarouselArea = styled.div`
       &.swiper-slide-next {
         .item_wrapper {
           &::after {
-            content: '';
+            content: "";
             display: block;
             width: 100%;
             height: 100%;
@@ -152,7 +152,7 @@ export const CarouselArea = styled.div`
       &.swiper-slide-prev {
         .item_wrapper {
           &::after {
-            content: '';
+            content: "";
             display: block;
             width: 100%;
             height: 100%;
@@ -168,7 +168,7 @@ export const CarouselArea = styled.div`
       &.swiper-slide-active {
         .item_wrapper {
           &::after {
-            content: '';
+            content: "";
             display: block;
             width: 100%;
             height: 100%;
@@ -189,18 +189,18 @@ export const CarouselArea = styled.div`
       > span {
         &.next_arrow {
           width: 45px;
-          background-color: ${themeGet('colors.primary', '#FDEF00')};
+          background-color: ${themeGet("colors.primary", "#FDEF00")};
           @media only screen and (max-width: 667px) {
             width: 30px;
           }
 
           &::before {
-            background-color: ${themeGet('colors.primary', '#FDEF00')};
+            background-color: ${themeGet("colors.primary", "#FDEF00")};
             transform: rotate(42deg);
           }
 
           &::after {
-            background-color: ${themeGet('colors.primary', '#FDEF00')};
+            background-color: ${themeGet("colors.primary", "#FDEF00")};
             transform: rotate(-42deg);
           }
         }
@@ -217,7 +217,7 @@ export const CircleLoader = styled.div`
 
   .circle {
     animation: ${grow} 1.5s linear infinite;
-    background-color: ${themeGet('colors.primary', '#FDEF00')};
+    background-color: ${themeGet("colors.primary", "#FDEF00")};
     border-radius: 50%;
     display: inline-block;
     margin: -9px;
@@ -227,14 +227,14 @@ export const CircleLoader = styled.div`
 
     &:nth-of-type(2) {
       animation-delay: 0.75s;
-      background-color: ${themeGet('colors.white', '#ffffff')};
+      background-color: ${themeGet("colors.white", "#ffffff")};
     }
   }
 
   &.alt {
     .circle {
       &:nth-of-type(2) {
-        background-color: ${themeGet('colors.heading', '#191919')};
+        background-color: ${themeGet("colors.heading", "#191919")};
       }
     }
   }

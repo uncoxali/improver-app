@@ -68,7 +68,7 @@ export const CarouseWrapper = styled.div`
       top: -15px;
       left: 0;
       width: 100%;
-      height: 105%;
+      height: 103%;
       background-image: url(${screen});
       background-repeat: no-repeat;
       background-position: center center;
@@ -175,6 +175,15 @@ export const TextWrapper = styled.div`
         margin-bottom: 7px;
       }
     }
+  }
+`;
+
+export const Responsive = styled.div`
+  @media only screen and (max-width: 667px) {
+    display: none;
+    width: 100%;
+    padding-left: 0;
+    margin-top: 40px;
   }
 `;
 

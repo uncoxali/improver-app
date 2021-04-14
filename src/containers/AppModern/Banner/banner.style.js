@@ -16,6 +16,7 @@ const BannerWrapper = styled.div`
     rgb(100, 43, 115) 0%,
     rgb(198, 66, 110) 100%
   );
+
   background-image: -ms-linear-gradient(
     139deg,
     rgb(100, 43, 115) 0%,

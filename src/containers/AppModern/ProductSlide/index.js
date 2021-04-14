@@ -75,7 +75,7 @@ const ProductSlide = () => {
                     <div>
                       <div
                         className="item_wrapper"
-                        style={{ marginBottom: "10px" }}
+                        style={{ marginBottom: "8px" }}
                       >
                         <Image src={item.thumb_url} alt={item.title} />
                       </div>

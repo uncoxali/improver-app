@@ -11,6 +11,7 @@ import SectionWrapper, {
   TextWrapper,
   MockupWrapper,
   App_store,
+  Responsive,
 } from "./appSlider.style";
 import LogoGoogle from "common/assets/image/appModern/google.png";
 import LogoApple from "common/assets/image/appModern/apple.png";
@@ -59,15 +60,17 @@ const AppSlider = () => {
           <TextWrapper>
             <Heading content={title} />
             <Text content={description} />
-            {features.map((item) => (
-              <FeatureBlock
-                key={`app-feature--key${item.id}`}
-                iconPosition="left"
-                icon={<img src={item.icon} alt={item.title} />}
-                title={<Heading as="h3" content={item.title} />}
-                description={<Text content={item.description} />}
-              />
-            ))}
+            <Responsive>
+              {features.map((item) => (
+                <FeatureBlock
+                  key={`app-feature--key${item.id}`}
+                  iconPosition="left"
+                  icon={<img src={item.icon} alt={item.title} />}
+                  title={<Heading as="h3" content={item.title} />}
+                  description={<Text content={item.description} />}
+                />
+              ))}
+            </Responsive>
           </TextWrapper>
         </Fade>
       </Container>

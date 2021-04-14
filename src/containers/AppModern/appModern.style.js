@@ -48,6 +48,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 export const AppWrapper = styled.div`
+  z-index: 10;
   overflow: hidden;
   display: flex;
   flex-direction: column;

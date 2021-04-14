@@ -122,7 +122,7 @@ const Navbar = () => {
           </Search>
           {/* end of search */}
 
-          <AnchorLink href="#trail" offset={84}>
+          <AnchorLink offset={84}>
             <Button className="trail" title="Get a quote" />
           </AnchorLink>
 

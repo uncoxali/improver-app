@@ -55,7 +55,8 @@ const CloseModalButton = () => (
 
 const customStyles = {
   content: {
-    top: "50%",
+    top: "53%",
+    zIndex: "9999",
     left: "50%",
     right: "auto",
     bottom: "auto",
@@ -190,7 +191,6 @@ const Banner = () => {
         onRequestClose={closeModal}
         style={customStyles}
         onRequestClose={() => setModalIsOpen(false)}
-        className=""
       >
         <ModalGroup>
           <div className="modal-parent">
@@ -345,6 +345,7 @@ const Banner = () => {
           </div>
         </ModalGroup>
       </Modal>
+
       <ToastContainer
         position="top-right"
         autoClose={5000}
