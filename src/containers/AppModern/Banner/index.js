@@ -33,7 +33,7 @@ import Telephone from "common/assets/image/telephon.png";
 import Mail from "common/assets/image/email.png";
 import Pin from "common/assets/image/pin.png";
 import style from "./style.module.css";
-import { linearGradient } from "polished";
+import { clearFix, linearGradient } from "polished";
 import axios from "axios";
 
 import { useForm } from "react-hook-form";
@@ -70,10 +70,9 @@ Modal.setAppElement("#__next");
 const Api = "https://web-api.improver.com.tr/api/project/v1/addProject";
 
 const Banner = () => {
-  
   const massageSuccess = () =>
-    toast.success("😃 SUCCESS!", {
-      position: "top-center",
+    toast.success("🚀 SUCCESS!", {
+      position: "top-right",
       autoClose: 5000,
       hideProgressBar: false,
       closeOnClick: true,
@@ -81,9 +80,10 @@ const Banner = () => {
       draggable: true,
       progress: undefined,
     });
+
   const massageError = () =>
     toast.error("😲 ERROR!", {
-      position: "top-center",
+      position: "top-right",
       autoClose: 5000,
       hideProgressBar: false,
       closeOnClick: true,
@@ -104,12 +104,13 @@ const Banner = () => {
     axios
       .post("https://web-api.improver.com.tr/api/project/v1/addProject", data)
       .then((res) => {
-        res.status == 200;
-        massageSuccess();
-      })
-      .then((err) => {
-        massageError();
+        if (res.status == 200) {
+          massageSuccess();
+        } else {
+          massageError();
+        }
       });
+
     e.target.reset();
   };
 
@@ -343,76 +344,20 @@ const Banner = () => {
             </div>
           </div>
         </ModalGroup>
-        {/* <div className="flex">
-            
-            <div className="bg-white-500 w-110 p-5">
-              <div
-                className="cursor-pointer right-7 absolute text-4xl"
-                onClick={() => setModalIsOpen(false)}
-              >
-                X
-              </div>
-              <form className="p-10">
-                <div>
-                  <p>Name</p>
-                  <input
-                    className="border-b-2 mt-2 border-gray-700 w-full"
-                    type="text"
-                    name="name"
-                    placeholder="Enter Your Name"
-                  />
-                </div>
-                <div className="flex">
-                  <div className="mt-16 w-1/2">
-                    <p>Mail</p>
-                    <input
-                      className="border-b-2 mt-2 border-gray-700 w-72"
-                      type="email"
-                      placeholder="Enter Your Mail Address"
-                    />
-                  </div>
-                  <div className="mt-16 w-1/2">
-                    <p>Number</p>
-                    <input
-                      className="border-b-2 mt-2 border-gray-700 w-full"
-                      type="email"
-                      placeholder="Enter Your Phone Number"
-                    />
-                  </div>
-                </div>
-                <div className="mt-16">
-                  <p>Which Department You Want To Contact?</p>
-                  <div className="flex mt-10 justify-around">
-                    <input className="mt-2" type="radio" name="app" />
-                    <label id="" className="mr-3">
-                      App Development
-                    </label>
-                    <input className="mt-2" type="radio" name="app" />
-                    <label id="" className="mr-3">
-                      Web Development
-                    </label>
-                    <input className="mt-2" type="radio" name="app" />
-                    <label id="" className="mr-3">
-                      Advertising
-                    </label>
-                    <input className="mt-2" type="radio" name="app" />
-                    <label id="" className="mr-3">
-                      SEO/ASO
-                    </label>
-                  </div>
-                </div>
-                <div className="mt-16">
-                  <p>Massege</p>
-                  <textarea
-                    type="text"
-                    placeholder="Enter Your Massege"
-                    className="border-b-2 mt-2 border-gray-700 w-full"
-                  />
-                </div>
-              </form>
-            </div>
-          </div> */}
       </Modal>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
+      {/* Same as */}
+      <ToastContainer />
     </BannerWrapper>
   );
 };
