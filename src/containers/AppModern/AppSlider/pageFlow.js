@@ -6,7 +6,11 @@ import Container from "common/components/UI/Container";
 import FeatureBlock from "common/components/FeatureBlock";
 import GlideCarousel from "common/components/GlideCarousel";
 import GlideSlide from "common/components/GlideCarousel/glideSlide";
-import SectionWrapper, { CarouseWrapper, TextWrapper } from "./appSlider.style";
+import SectionWrapper, {
+  CarouseWrapper,
+  TextWrapper,
+  App_store,
+} from "./appSlider.style";
 import LogoGoogle from "common/assets/image/appModern/google.png";
 import LogoApple from "common/assets/image/appModern/apple.png";
 
@@ -64,16 +68,24 @@ const AppFlow = () => {
           </TextWrapper>
         </Fade>
       </Container>
-      <div className="mt-3 flex justify-center h-20">
-        <div className="flex absolute lg:mt-20">
-          <div className="w-44 ml-10">
-            <img src={LogoGoogle} />
-          </div>
-          <div className="w-36 mr-10 mt-3">
-            <img className="" src={LogoApple} />
+      <App_store>
+        <div className="parent mt-3 flex justify-center h-20">
+          <div className="parent-img flex absolute lg:mt-20">
+            <div className="img-div">
+              <img src={LogoGoogle} width="200px" />
+            </div>
+            <div className="img-div">
+              <img
+                className=""
+                src={LogoApple}
+                width="176px"
+                height="52px"
+                style={{ marginTop: "12px" }}
+              />
+            </div>
           </div>
         </div>
-      </div>
+      </App_store>
     </SectionWrapper>
   );
 };

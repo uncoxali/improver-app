@@ -178,4 +178,29 @@ export const TextWrapper = styled.div`
   }
 `;
 
+export const App_store = styled.div`
+  .img-div {
+    width: 200px;
+  }
+  .parent {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+  }
+
+  .parent-img {
+    display: flex;
+    position: absolute;
+    margin-top: 100px;
+  }
+  @media only screen and (max-width: 700px) {
+    .parent-img {
+      display: flex;
+      position: absolute;
+      margin-top: 20px;
+    }
+  }
+`;
+
 export default SectionWrapper;
