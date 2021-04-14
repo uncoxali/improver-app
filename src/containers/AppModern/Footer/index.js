@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Box from "common/components/Box";
 // import whatsApp from "common/assets/image/appModern/whatsapp.svg";
@@ -20,6 +20,12 @@ import FooterArea, {
 import { footer } from "common/data/AppModern";
 
 const Footer = () => {
+  const [screen, setScreen] = useState(0);
+  useEffect(() => {
+    let screen = window.screen.height;
+    setScreen(screen);
+  });
+
   const { logo, menu, widgets } = footer;
   const date = new Date();
   const year = date.getFullYear();
@@ -56,7 +62,7 @@ const Footer = () => {
             </Menu>
             <CopyrightText>Copyright {year} By Improver</CopyrightText>
             <Footer_mobile>
-              <div className="icon-wrapper whatsapp">
+              <div className={"icon-wrapper whatsapp"}>
                 <p>Chat With Us</p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

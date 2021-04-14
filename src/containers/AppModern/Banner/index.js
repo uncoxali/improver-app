@@ -38,6 +38,9 @@ import axios from "axios";
 
 import { useForm } from "react-hook-form";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 // close button for modal
 const CloseModalButton = () => (
   <Button
@@ -67,6 +70,28 @@ Modal.setAppElement("#__next");
 const Api = "https://web-api.improver.com.tr/api/project/v1/addProject";
 
 const Banner = () => {
+  
+  const massageSuccess = () =>
+    toast.success("😃 SUCCESS!", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  const massageError = () =>
+    toast.error("😲 ERROR!", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const {
@@ -74,11 +99,17 @@ const Banner = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
+
   const onSubmit = (data, e) => {
     axios
       .post("https://web-api.improver.com.tr/api/project/v1/addProject", data)
-      .then((res) => console.log(res))
-      .then((err) => console.log(err));
+      .then((res) => {
+        res.status == 200;
+        massageSuccess();
+      })
+      .then((err) => {
+        massageError();
+      });
     e.target.reset();
   };
 
@@ -196,7 +227,7 @@ const Banner = () => {
             <div className="form">
               <form onSubmit={handleSubmit(onSubmit)}>
                 <div>
-                  <label>Name</label>
+                  <p>Name</p>
                   <input
                     {...register("username", { required: true })}
                     className="input-name"
@@ -205,7 +236,9 @@ const Banner = () => {
                     placeholder="Enter Your Name"
                   />
                   {errors.username && (
-                    <span style={{ color: "red" }}>This field is required</span>
+                    <span style={{ color: "red", display: "block" }}>
+                      This field is required
+                    </span>
                   )}
                 </div>
                 <div className="input">
@@ -213,7 +246,7 @@ const Banner = () => {
                     <p>Mail</p>
                     <input
                       {...register("email", { required: true })}
-                      className="input-mail"
+                      className={`input-mail`}
                       type="Email"
                       name="email"
                       placeholder="Enter Your Mail"
@@ -227,7 +260,11 @@ const Banner = () => {
                   <div>
                     <p>Phone</p>
                     <input
-                      {...register("phoneNumber", { required: true })}
+                      {...register(
+                        "phoneNumber",
+                        { required: true },
+                        { validate: (value) => value.length > 10 }
+                      )}
                       className="input-number"
                       type="number"
                       name="phoneNumber"
@@ -296,7 +333,9 @@ const Banner = () => {
                     name="description"
                   />
                   {errors.description && (
-                    <span style={{ color: "red" }}>This field is required</span>
+                    <span style={{ color: "red", display: "block" }}>
+                      This field is required
+                    </span>
                   )}
                 </div>
                 <button className="submit">Send</button>

@@ -93,7 +93,7 @@ export const ModalGroup = styled.div`
     width: 100%;
   }
   .input {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -217,8 +217,10 @@ export const ModalGroup = styled.div`
     .modal-parent {
       display: block;
       width: 340px;
+      height: auto;
       overflow-x: hidden;
     }
+
     .close-btn {
       cursor: pointer;
       font-size: 30px;
@@ -260,7 +262,8 @@ export const ModalGroup = styled.div`
       );
     }
     .input-name {
-      padding: 2px;
+      margin-top: -10%;
+      padding: 1px;
       border: none;
       border-bottom: 1px solid black;
       width: 200px;
@@ -292,7 +295,6 @@ export const ModalGroup = styled.div`
       margin-bottom: 20px;
     }
     .input {
-      margin-top: 10px;
       display: block;
       width: 100%;
       justify-content: space-between;

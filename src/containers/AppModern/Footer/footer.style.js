@@ -135,6 +135,10 @@ export const Footer_mobile = styled.div`
   padding: 0;
   margin: 0;
   @media only screen and (max-width: 667px) {
+    .footer-mobile {
+      display: none;
+    }
+
     display: flex;
     position: fixed;
     bottom: 0;
